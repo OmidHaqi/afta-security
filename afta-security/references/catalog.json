@@ -1,0 +1,3102 @@
+{
+  "package_version": "1.1.0",
+  "source_version": "1.9",
+  "source_title": "سند الزامات امنیتی برنامه‌های کاربردی تحت شبکه",
+  "source_filename": "QuestAfta.V1.9.docx",
+  "source_sha256": "95d41ee717f2502ad388a4667c9a9907618c38b656120d37c87515d5d7609f3f",
+  "source_authority": "User-supplied populated document; not independently authenticated or verified as latest.",
+  "extraction": "Only requirement cells, selection instructions and option text from tables 2–16. All checkbox/status and product-answer cells excluded; product introduction excluded. Zero-based table/row indices refer to word/document.xml. Original spelling and ambiguities preserved.",
+  "flags": [
+    "https",
+    "tls",
+    "tls_client",
+    "tls_server",
+    "ssh",
+    "certificate_validation",
+    "key_generation",
+    "digital_signatures",
+    "external_security_products",
+    "automatic_updates"
+  ],
+  "sections": [
+    {
+      "section": "2-1",
+      "name": "رده ممیزی امنیت (Log)",
+      "file": "audit.md"
+    },
+    {
+      "section": "2-2",
+      "name": "رده رمزنگاری",
+      "file": "crypto.md"
+    },
+    {
+      "section": "2-3",
+      "name": "رده شناسایی و احراز هویت",
+      "file": "identity.md"
+    },
+    {
+      "section": "2-4",
+      "name": "رده حفاظت از داده‌ی کاربری",
+      "file": "data.md"
+    },
+    {
+      "section": "2-5",
+      "name": "رده مدیریت امنیت",
+      "file": "management.md"
+    },
+    {
+      "section": "2-6",
+      "name": "رده حفاظت از توابع امنیتی محصول",
+      "file": "security-functions.md"
+    },
+    {
+      "section": "2-7",
+      "name": "رده تخصیص منابع",
+      "file": "resources.md"
+    },
+    {
+      "section": "2-8",
+      "name": "رده دسترسی به محصول",
+      "file": "sessions.md"
+    },
+    {
+      "section": "2-9",
+      "name": "رده کانال‌ها/مسیرهای مورد اعتماد",
+      "file": "trusted-channel.md"
+    },
+    {
+      "section": "3-1",
+      "name": "پروتکل HTTPS",
+      "file": "https.md"
+    },
+    {
+      "section": "3-2",
+      "name": "پروتکل TLS Client",
+      "file": "tls-client.md"
+    },
+    {
+      "section": "3-3",
+      "name": "پروتکل TLS Server",
+      "file": "tls-server.md"
+    },
+    {
+      "section": "3-4",
+      "name": "پروتکل TLS مشترک کلاینت و سرور",
+      "file": "tls-mutual.md"
+    },
+    {
+      "section": "3-5",
+      "name": "اعتبارسنجی گواهی‌نامه",
+      "file": "certificates.md"
+    },
+    {
+      "section": "3-6",
+      "name": "پروتکل SSH",
+      "file": "ssh.md"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "AFTA-2-1-01",
+      "section": "2-1",
+      "number": 1,
+      "category": "رده ممیزی امنیت (Log)",
+      "text": "محصول باید برای موارد مشخص‌شده که در زیر آمده است، ثبت‌نشان تولید کند (Log ثبت نماید).",
+      "source": {
+        "table_index": 2,
+        "row_index": 1
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-1-01.s01",
+          "instruction": "رویدادهایی که برای آنها لاگ ثبت می‌شود را مشخص نمایید.",
+          "text": "شروع و اتمام توابع",
+          "source_row_index": 2
+        },
+        {
+          "id": "AFTA-2-1-01.s02",
+          "instruction": "",
+          "text": "تلاش‌های ناموفق برای خواندن اطلاعات از ثبت‌نشان‌ها",
+          "source_row_index": 3
+        },
+        {
+          "id": "AFTA-2-1-01.s03",
+          "instruction": "",
+          "text": "خواندن اطلاعات از ثبت‌نشان‌ها",
+          "source_row_index": 4
+        },
+        {
+          "id": "AFTA-2-1-01.s04",
+          "instruction": "",
+          "text": "تمامی تغییرات در پیکربندی ثبت‌نشان‌ها",
+          "source_row_index": 5
+        },
+        {
+          "id": "AFTA-2-1-01.s05",
+          "instruction": "",
+          "text": "عملیات انجام‌شده به دلیل سرریز حافظه ثبت‌نشان‌ها از حد آستانه",
+          "source_row_index": 6
+        },
+        {
+          "id": "AFTA-2-1-01.s06",
+          "instruction": "",
+          "text": "عملیات انجام‌شده به دلیل شکست در ذخیره‌سازی ثبت‌نشان‌ها",
+          "source_row_index": 7
+        },
+        {
+          "id": "AFTA-2-1-01.s07",
+          "instruction": "",
+          "text": "تلاش‌های موفقیت‌آمیز برای بررسی صحت داده‌ی کاربری، شامل نتایج بررسی.",
+          "source_row_index": 8
+        },
+        {
+          "id": "AFTA-2-1-01.s08",
+          "instruction": "",
+          "text": "تمام کاربردهای سازوکار احراز هویت",
+          "source_row_index": 9
+        },
+        {
+          "id": "AFTA-2-1-01.s09",
+          "instruction": "",
+          "text": "نتایج نهایی عملیات احراز هویت",
+          "source_row_index": 10
+        },
+        {
+          "id": "AFTA-2-1-01.s10",
+          "instruction": "",
+          "text": "تلاش موفق و ناموفق هر گذرواژه بررسی‌شده توسط محصول",
+          "source_row_index": 11
+        },
+        {
+          "id": "AFTA-2-1-01.s11",
+          "instruction": "",
+          "text": "شکست و موفقیت انتساب ویژگی‌های امنیتی کاربر به موجودیت فعال (مانند شکست و موفقیت ایجاد موجودیت فعال)",
+          "source_row_index": 12
+        },
+        {
+          "id": "AFTA-2-1-01.s12",
+          "instruction": "",
+          "text": "تمامی تغییرات بر روی مقادیر ویژگی‌های امنیتی",
+          "source_row_index": 13
+        },
+        {
+          "id": "AFTA-2-1-01.s13",
+          "instruction": "",
+          "text": "تمامی درخواست‌ها (موفق و ناموفق) برای اجرای عملیات بر روی یک موجودیت غیرفعال محصول",
+          "source_row_index": 14
+        },
+        {
+          "id": "AFTA-2-1-01.s14",
+          "instruction": "",
+          "text": "تمامی تلاش‌ها برای وارد کردن داده‌های کاربری (شامل هرگونه ویژگی‌های امنیتی)",
+          "source_row_index": 15
+        },
+        {
+          "id": "AFTA-2-1-01.s15",
+          "instruction": "",
+          "text": "همه تلاش‌ها برای خارج کردن اطلاعات از محصول",
+          "source_row_index": 16
+        },
+        {
+          "id": "AFTA-2-1-01.s16",
+          "instruction": "",
+          "text": "تمامی تغییرات در رفتارهای توابع کارکردی محصول",
+          "source_row_index": 17
+        },
+        {
+          "id": "AFTA-2-1-01.s17",
+          "instruction": "",
+          "text": "استفاده از کارکردهای مدیریتی",
+          "source_row_index": 18
+        },
+        {
+          "id": "AFTA-2-1-01.s18",
+          "instruction": "",
+          "text": "تغییرات در گروه کاربران",
+          "source_row_index": 19
+        },
+        {
+          "id": "AFTA-2-1-01.s19",
+          "instruction": "",
+          "text": "شکست در کارکردهای امنیتی محصول",
+          "source_row_index": 20
+        },
+        {
+          "id": "AFTA-2-1-01.s20",
+          "instruction": "",
+          "text": "تمامی قابلیت‌هایی از محصول که به دلیل شکست (خرابی یا مشکل کارکرد)، نمی‌توانند عملیات مورد نظر را انجام دهند.",
+          "source_row_index": 21
+        },
+        {
+          "id": "AFTA-2-1-01.s21",
+          "instruction": "",
+          "text": "تلاش موفق یا ناموفق برای برقراری نشست.",
+          "source_row_index": 22
+        },
+        {
+          "id": "AFTA-2-1-01.s22",
+          "instruction": "",
+          "text": "ایجاد نشدن نشست به دلیل محدودیت نشست‌های همزمان (حداقل)",
+          "source_row_index": 23
+        },
+        {
+          "id": "AFTA-2-1-01.s23",
+          "instruction": "",
+          "text": "خاتمه دادن به یک نشست غیرفعال توسط سازوکار قفل نشست",
+          "source_row_index": 24
+        },
+        {
+          "id": "AFTA-2-1-01.s24",
+          "instruction": "",
+          "text": "خاتمه‍ به نشست غیرفعال توسط مدیر سیستم",
+          "source_row_index": 25
+        },
+        {
+          "id": "AFTA-2-1-01.s25",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 26
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-1-02",
+      "section": "2-1",
+      "number": 2,
+      "category": "رده ممیزی امنیت (Log)",
+      "text": "محصول باید برای هر ثبت‌نشان تولیدشده، ویژگی‌هایی که در زیر آمده است را ثبت نماید.",
+      "source": {
+        "table_index": 2,
+        "row_index": 27
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-1-02.s01",
+          "instruction": "ویژگی‌هایی که در ثبت‌نشان‌ها وجود دارد مشخص شود.",
+          "text": "تاریخ و زمان رویداد",
+          "source_row_index": 28
+        },
+        {
+          "id": "AFTA-2-1-02.s02",
+          "instruction": "",
+          "text": "نوع رویداد",
+          "source_row_index": 29
+        },
+        {
+          "id": "AFTA-2-1-02.s03",
+          "instruction": "",
+          "text": "هویت ایجادکننده رویداد",
+          "source_row_index": 30
+        },
+        {
+          "id": "AFTA-2-1-02.s04",
+          "instruction": "",
+          "text": "نتیجه رویداد",
+          "source_row_index": 31
+        },
+        {
+          "id": "AFTA-2-1-02.s05",
+          "instruction": "",
+          "text": "آدرس IP ایجادکننده رویداد",
+          "source_row_index": 32
+        },
+        {
+          "id": "AFTA-2-1-02.s06",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 33
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-1-03",
+      "section": "2-1",
+      "number": 3,
+      "category": "رده ممیزی امنیت (Log)",
+      "text": "محصول باید ثبت‌نشان‌ها را در برابر دسترسی غیرمجاز محافظت نماید.",
+      "source": {
+        "table_index": 2,
+        "row_index": 34
+      },
+      "applies_when_any": [],
+      "details": []
+    },
+    {
+      "id": "AFTA-2-1-04",
+      "section": "2-1",
+      "number": 4,
+      "category": "رده ممیزی امنیت (Log)",
+      "text": "ثبت‌نشان‌هایی که محصول تولید می‌نماید باید برای کاربر ساده و قابل فهم باشند.",
+      "source": {
+        "table_index": 2,
+        "row_index": 35
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-1-04.s01",
+          "instruction": "مواردی که در ثبت‌نشان‌ها وجود دارند، مشخص شوند.",
+          "text": "نبود داده نامفهوم در رکوردها",
+          "source_row_index": 36
+        },
+        {
+          "id": "AFTA-2-1-04.s02",
+          "instruction": "",
+          "text": "نبود بخش‌های نامرتبط",
+          "source_row_index": 37
+        },
+        {
+          "id": "AFTA-2-1-04.s03",
+          "instruction": "",
+          "text": "وجود داده معتبر و مناسب در هر بخش",
+          "source_row_index": 38
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-1-05",
+      "section": "2-1",
+      "number": 5,
+      "category": "رده ممیزی امنیت (Log)",
+      "text": "محصول باید امکان انتخاب و مرتب‌سازی برای ثبت‌نشان‌های تولیدشده را بر اساس بخش‌ها و پارامترهای مختلف، برای کاربر مجاز فراهم نماید.",
+      "source": {
+        "table_index": 2,
+        "row_index": 39
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-1-05.s01",
+          "instruction": "مواردی که بر اساس آنها مرتب‌سازی وجود دارد، مشخص شود.",
+          "text": "هویت موجودیت فعال",
+          "source_row_index": 40
+        },
+        {
+          "id": "AFTA-2-1-05.s02",
+          "instruction": "",
+          "text": "نوع حساب کاربری",
+          "source_row_index": 41
+        },
+        {
+          "id": "AFTA-2-1-05.s03",
+          "instruction": "",
+          "text": "تاریخ/زمان",
+          "source_row_index": 42
+        },
+        {
+          "id": "AFTA-2-1-05.s04",
+          "instruction": "",
+          "text": "روش اتصال کاربر",
+          "source_row_index": 43
+        },
+        {
+          "id": "AFTA-2-1-05.s05",
+          "instruction": "",
+          "text": "نوع رخداد",
+          "source_row_index": 44
+        },
+        {
+          "id": "AFTA-2-1-05.s06",
+          "instruction": "",
+          "text": "مکان رویداد",
+          "source_row_index": 45
+        },
+        {
+          "id": "AFTA-2-1-05.s07",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 46
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-1-06",
+      "section": "2-1",
+      "number": 6,
+      "category": "رده ممیزی امنیت (Log)",
+      "text": "محصول باید هرگونه حذف و تغییر غیرمجاز در ثبت‌نشان‌ها را تشخیص دهد و در صورت امکان جلوگیری نماید.",
+      "source": {
+        "table_index": 2,
+        "row_index": 47
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-1-06.s01",
+          "instruction": "روش‌های تشخیص مشخص شود. (وجـود یـک مورد لازم و کـافی است)",
+          "text": "استفاده از درهم‌سازی (Hash) برای تشخیص تغییرات",
+          "source_row_index": 48
+        },
+        {
+          "id": "AFTA-2-1-06.s02",
+          "instruction": "",
+          "text": "پیکربندی امن پایگاه داده (کنترل دسترسی و رویدادنگاری)",
+          "source_row_index": 49
+        },
+        {
+          "id": "AFTA-2-1-06.s03",
+          "instruction": "",
+          "text": "فقط خواندنی کردن ثبت‌نشان‌ها در محصول",
+          "source_row_index": 50
+        },
+        {
+          "id": "AFTA-2-1-06.s04",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 51
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-1-07",
+      "section": "2-1",
+      "number": 7,
+      "category": "رده ممیزی امنیت (Log)",
+      "text": "محصول باید وقتی که حجم ثبت‌نشان‌ها، به حد آستانه تعریف شده برای ذخیره‌سازی می‌رسد، کاربر مجاز را مطلع نماید.",
+      "source": {
+        "table_index": 2,
+        "row_index": 52
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-1-07.s01",
+          "instruction": "روش‌های اطلاع‌رسانی مشخص شود (وجود یـک مـورد لازم و کافی است)",
+          "text": "استفاده از یک کانال ارتباطی",
+          "source_row_index": 53
+        },
+        {
+          "id": "AFTA-2-1-07.s02",
+          "instruction": "",
+          "text": "ارسال پیام",
+          "source_row_index": 54
+        },
+        {
+          "id": "AFTA-2-1-07.s03",
+          "instruction": "",
+          "text": "از طریق واسط کاربر مجاز",
+          "source_row_index": 55
+        },
+        {
+          "id": "AFTA-2-1-07.s04",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 56
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-1-08",
+      "section": "2-1",
+      "number": 8,
+      "category": "رده ممیزی امنیت (Log)",
+      "text": "محصول باید توانایی تولید ثبت‌نشان (ثبت Log) هنگام از کار افتادن محصول و/یا پر شدن حافظه ثبت‌نشان‌ها را داشته باشد و برای این کار از رویکردهای بیان‌شده استفاده نماید.",
+      "source": {
+        "table_index": 2,
+        "row_index": 57
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-1-08.s01",
+          "instruction": "رویکردهای مـورد استفاده در محصول مشخص گردد (وجود یـک مورد لازم و کافی است)",
+          "text": "نادیده گرفتن ثبت‌نشان‌ها",
+          "source_row_index": 58
+        },
+        {
+          "id": "AFTA-2-1-08.s02",
+          "instruction": "",
+          "text": "ذخیره‌سازی محدود ثبت‌نشان‌ها (آنهایی که توسط کاربر مجاز و تحت حقوق خاصی رخ می‌دهند)",
+          "source_row_index": 59
+        },
+        {
+          "id": "AFTA-2-1-08.s03",
+          "instruction": "",
+          "text": "بازنویسی روی قدیمی‌ترین ثبت‌نشان‌های ذخیره‌شده",
+          "source_row_index": 60
+        },
+        {
+          "id": "AFTA-2-1-08.s04",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 61
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-2-01",
+      "section": "2-2",
+      "number": 1,
+      "category": "رده رمزنگاری",
+      "text": "محصول باید قابلیت رمزنگاری یا واحد رمزنگاری داشته باشد، بنابراین باید رمزگذاری و رمزگشایی را بر اساس الگوریتم AES (تعریف‌شده ISO 18033-3) با توجه به موارد زیر انجام دهد.",
+      "source": {
+        "table_index": 3,
+        "row_index": 1
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-2-01.s01",
+          "instruction": "مد عملیاتی که الگوریتم از آن استفاده می‌کند را انتخاب نمایید. (وجود یک مورد لازم و کافی است.)",
+          "text": "مد عملیاتی CBC و طول کلید 128 یا 192 یا 256 بیتی (تعریف‌شده در NIST SP 800-38A)",
+          "source_row_index": 2
+        },
+        {
+          "id": "AFTA-2-2-01.s02",
+          "instruction": "",
+          "text": "مد عملیاتی GCM و طول کلید 128 یا 192 یا 256 بیتی (تعریف‌شده در NIST SP 800-38D)",
+          "source_row_index": 3
+        },
+        {
+          "id": "AFTA-2-2-01.s03",
+          "instruction": "",
+          "text": "مد عملیاتی CTR و طول کلید 128 یا 192 یا 256 بیتی (تعریف‌شده در ISO10116)",
+          "source_row_index": 4
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-2-02",
+      "section": "2-2",
+      "number": 2,
+      "category": "رده رمزنگاری",
+      "text": "محصول باید بر اساس الگوریتم رمزنگاری و طول کلیدی که انتخاب می‌نماید، توانایی تولید داده درهم‌سازی شده (Hash) را داشته باشد؛ بنابراین باید برای تولید درهم‌سازی از موارد زیر بر اساس ISO/IEC 10118-3:2004 استفاده نماید.",
+      "source": {
+        "table_index": 3,
+        "row_index": 5
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-2-02.s01",
+          "instruction": "الگوریتم و اندازه خلاصه پیام مورد استفاده را انتخاب نمایید. (وجود یک مورد لازم و کافی است.)",
+          "text": "الگوریتم SHA-1 با اندازه خلاصه پیام 160 بیت",
+          "source_row_index": 6
+        },
+        {
+          "id": "AFTA-2-2-02.s02",
+          "instruction": "",
+          "text": "الگوریتم SHA-256 با اندازه خلاصه پیام 256 بیت",
+          "source_row_index": 7
+        },
+        {
+          "id": "AFTA-2-2-02.s03",
+          "instruction": "",
+          "text": "الگوریتم SHA-384 با اندازه خلاصه پیام 384 بیت",
+          "source_row_index": 8
+        },
+        {
+          "id": "AFTA-2-2-02.s04",
+          "instruction": "",
+          "text": "الگوریتم SHA-512 با اندازه خلاصه پیام 512 بیت",
+          "source_row_index": 9
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-2-03",
+      "section": "2-2",
+      "number": 3,
+      "category": "رده رمزنگاری",
+      "text": "در صورتی که تولید کلید رمزنگاری در محصول وجود دارد، نیاز است که تخریب کلید رمزنگاری نیز بر اساس موارد زیر صورت پذیرد. (اختیاری)",
+      "source": {
+        "table_index": 3,
+        "row_index": 10
+      },
+      "applies_when_any": [
+        "key_generation"
+      ],
+      "details": [
+        {
+          "id": "AFTA-2-2-03.s01",
+          "instruction": "روش نابودی کلید مشخص گردد. (وجود یک مورد لازم و کافی است)",
+          "text": "نابودی با استفاده از بازنویسی ساده (بازنویسی با صفرها، یک‌ها، مقدار تصادفی، مقدار جدیدی از کلید)",
+          "source_row_index": 11
+        },
+        {
+          "id": "AFTA-2-2-03.s02",
+          "instruction": "",
+          "text": "نابودی با استفاده از یک واسط مشخص",
+          "source_row_index": 12
+        },
+        {
+          "id": "AFTA-2-2-03.s03",
+          "instruction": "",
+          "text": "از طریق توابع امنیتی محصول",
+          "source_row_index": 13
+        },
+        {
+          "id": "AFTA-2-2-03.s04",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 14
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-2-04",
+      "section": "2-2",
+      "number": 4,
+      "category": "رده رمزنگاری",
+      "text": "در صورتی که امضای دیجیتال در محصول پشتیبانی می‌شود، نیاز است که سرویس‌های امضای رمزنگاری (تولید و تأیید) بر اساس الگوریتم‌های رمزنگاری زیر انجام گیرد. (اختیاری)",
+      "source": {
+        "table_index": 3,
+        "row_index": 15
+      },
+      "applies_when_any": [
+        "digital_signatures"
+      ],
+      "details": [
+        {
+          "id": "AFTA-2-2-04.s01",
+          "instruction": "الگوریتم و اندازه کلیدهای مورد استفاده را انتخاب نمایید. (وجود یک مورد لازم و کافی است)",
+          "text": "الگوریتم‌های امضای دیجیتال RSA با کلیدهای رمزنگاری 2048 بیت و بزرگتر\n(بر اساس FIPS PUB 186-4، استاندارد امضای دیجیتال (DSS) بخش 5.5، الگوی امضای RSASSA-PSS نسخه PKCS #1 v2.1 و/یا RSASSA-PKCS1v_5؛ ISO/IEC 9796-2، الگوی امضای دیجیتال 2 و یا الگوی امضای دیجیتال 3)",
+          "source_row_index": 16
+        },
+        {
+          "id": "AFTA-2-2-04.s02",
+          "instruction": "",
+          "text": "الگوریتم‌های امضای دیجیتال ECDSA با کلیدهای رمزنگاری 256 بیت یا بزرگتر\n(بر اساس ISO/IEC 14888-3 بخش 6.4، استاندارد امضای دیجیتال (DSS) بخش 6 و پیوست D، با استفاده از منحنی P-256 یا P-384 یا P-521)",
+          "source_row_index": 17
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-3-01",
+      "section": "2-3",
+      "number": 1,
+      "category": "رده شناسایی و احراز هویت",
+      "text": "محصول باید بتواند تعداد تلاش‌های ناموفقی را که برای احراز هویت صورت گرفته است (در هر بخش یا قسمتی که نیاز به احراز هویت وجود دارد)، بر اساس موارد زیر مشخص نماید.",
+      "source": {
+        "table_index": 4,
+        "row_index": 1
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-3-01.s01",
+          "instruction": "مقدار یا یازه‌ی مورد استفاده در هریک باید مشخص گردد. (وجود یک مورد لازم و کافی است)",
+          "text": "یک عدد مثبت ثابت",
+          "source_row_index": 2
+        },
+        {
+          "id": "AFTA-2-3-01.s02",
+          "instruction": "",
+          "text": "یک عدد مثبت قابل تنظیم توسط مدیر",
+          "source_row_index": 3
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-3-02",
+      "section": "2-3",
+      "number": 2,
+      "category": "رده شناسایی و احراز هویت",
+      "text": "محصول باید هنگامی که تعداد تلاش‌های ناموفق صورت گرفته برای احراز هویت به حد تعیین‌شده رسید، برای پیچیده‌تر کردن احراز هویت از موارد زیر استفاده نماید.",
+      "source": {
+        "table_index": 4,
+        "row_index": 4
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-3-02.s01",
+          "instruction": "روش استفاده شده برای پیچیده‌تر کردن احراز هویت را انتخاب نمایید. (وجود یک مورد لازم و کافی است.)\nلازم به ذکر است روش‌های فوق با توجه به نوع کاربرد می‌تواند از حالت انتخابی به حالت الزامی تغییر یابد. برای مثال غیرفعال کردن حساب کاربری در تمامی کاربردها مفید نیست.",
+          "text": "غیرفعال کردن حساب کاربری (فعال کردن به صورت دستی توسط مدیر صورت می‌گیرد)",
+          "source_row_index": 5
+        },
+        {
+          "id": "AFTA-2-3-02.s02",
+          "instruction": "",
+          "text": "غیرفعال کردن حساب کاربری بر اساس مدت زمان معین (فعال کردن پس از زمان مذکور به صورت خودکار صورت می‌گیرد)",
+          "source_row_index": 6
+        },
+        {
+          "id": "AFTA-2-3-02.s03",
+          "instruction": "",
+          "text": "استفاده از سازوکارهایی مانند کدهای CAPTCHA، گرفتن ایمیل و ... (در قسمت «توضیحات» بیان شود)",
+          "source_row_index": 7
+        },
+        {
+          "id": "AFTA-2-3-02.s04",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 8
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-3-03",
+      "section": "2-3",
+      "number": 3,
+      "category": "رده شناسایی و احراز هویت",
+      "text": "محصول باید برای هر کاربر، ویژگی‌های امنیتی را که شامل حداقل اطلاعات کاربری لازم برای شناسایی و احراز هویت می‌باشند، نگهداری نماید.",
+      "source": {
+        "table_index": 4,
+        "row_index": 9
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-3-03.s01",
+          "instruction": "ویژگی‌های امنیتی مورد نیاز که باید برای هر کاربر نگهداری شوند.",
+          "text": "شناسه کاربر",
+          "source_row_index": 10
+        },
+        {
+          "id": "AFTA-2-3-03.s02",
+          "instruction": "",
+          "text": "روش احراز هویت مورد استفاده",
+          "source_row_index": 11
+        },
+        {
+          "id": "AFTA-2-3-03.s03",
+          "instruction": "",
+          "text": "داده احراز هویت",
+          "source_row_index": 12
+        },
+        {
+          "id": "AFTA-2-3-03.s04",
+          "instruction": "",
+          "text": "وضعیت حساب کاربری (فعال، غیرفعال، مسدود شده و غیره)",
+          "source_row_index": 13
+        },
+        {
+          "id": "AFTA-2-3-03.s05",
+          "instruction": "",
+          "text": "نقش کاربر",
+          "source_row_index": 14
+        },
+        {
+          "id": "AFTA-2-3-03.s06",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 15
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-3-04",
+      "section": "2-3",
+      "number": 4,
+      "category": "رده شناسایی و احراز هویت",
+      "text": "محصول باید قابلیت مدیریت گذرواژه را فراهم آورد.",
+      "source": {
+        "table_index": 4,
+        "row_index": 16
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-3-04.s01",
+          "instruction": "موارد نیاز که باید در تعریف گذرواژه استفاده شوند.",
+          "text": "استفاده از حروف کوچک",
+          "source_row_index": 17
+        },
+        {
+          "id": "AFTA-2-3-04.s02",
+          "instruction": "",
+          "text": "استفاده از حروف بزرگ",
+          "source_row_index": 18
+        },
+        {
+          "id": "AFTA-2-3-04.s03",
+          "instruction": "",
+          "text": "استفاده از اعداد",
+          "source_row_index": 19
+        },
+        {
+          "id": "AFTA-2-3-04.s04",
+          "instruction": "",
+          "text": "استفاده از کاراکترهای خاص («@»، «#»، «$»، «٪»، «^»، «!»، «&»، «*»، «(» , «)» و ...)",
+          "source_row_index": 20
+        },
+        {
+          "id": "AFTA-2-3-04.s05",
+          "instruction": "",
+          "text": "حداقل طول 8 یا بیشتر (قابل تنظیم)",
+          "source_row_index": 21
+        },
+        {
+          "id": "AFTA-2-3-04.s06",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 22
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-3-05",
+      "section": "2-3",
+      "number": 5,
+      "category": "رده شناسایی و احراز هویت",
+      "text": "محصول باید پیش از احراز هویت موفق یک کاربر، تنها اجازه انجام اقدامات محدودی را فراهم نماید.",
+      "source": {
+        "table_index": 4,
+        "row_index": 23
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-3-05.s01",
+          "instruction": "اقدامات عمومی که کاربر می‌تواند  قبل از احراز هویت انجام دهد، انتخاب شود.",
+          "text": "مشاهده راهنمای نحوه ورود به سیستم",
+          "source_row_index": 24
+        },
+        {
+          "id": "AFTA-2-3-05.s02",
+          "instruction": "",
+          "text": "بازیابی گذرواژه",
+          "source_row_index": 25
+        },
+        {
+          "id": "AFTA-2-3-05.s03",
+          "instruction": "",
+          "text": "هیچ اقدامی",
+          "source_row_index": 26
+        },
+        {
+          "id": "AFTA-2-3-05.s04",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 27
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-3-06",
+      "section": "2-3",
+      "number": 6,
+      "category": "رده شناسایی و احراز هویت",
+      "text": "محصول باید از سازوکار احراز هویت پشتیبانی نماید (برای احراز هویت کاربران راه‌دور، باید بیش از یک سازوکار احراز هویت در محصول به کار رفته باشد).",
+      "source": {
+        "table_index": 4,
+        "row_index": 28
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-3-06.s01",
+          "instruction": "سـازوکارهـای احراز هویت موجود در محصول مشخص شوند.",
+          "text": "نام کاربری و گذرواژه",
+          "source_row_index": 29
+        },
+        {
+          "id": "AFTA-2-3-06.s02",
+          "instruction": "",
+          "text": "امضای دیجیتال",
+          "source_row_index": 30
+        },
+        {
+          "id": "AFTA-2-3-06.s03",
+          "instruction": "",
+          "text": "سامانه‌های احراز هویت مرکزی (مانند Active Directory و ...)",
+          "source_row_index": 31
+        },
+        {
+          "id": "AFTA-2-3-06.s04",
+          "instruction": "",
+          "text": "OTP یا توکن",
+          "source_row_index": 32
+        },
+        {
+          "id": "AFTA-2-3-06.s05",
+          "instruction": "",
+          "text": "احراز هویت دو فاکتوری",
+          "source_row_index": 33
+        },
+        {
+          "id": "AFTA-2-3-06.s06",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 34
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-3-07",
+      "section": "2-3",
+      "number": 7,
+      "category": "رده شناسایی و احراز هویت",
+      "text": "محصول باید برای هر کاربر فعال، ویژگی‌های امنیتی را نگهداری نماید.",
+      "source": {
+        "table_index": 4,
+        "row_index": 35
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-3-07.s01",
+          "instruction": "ویژگی‌هایی امنیتی که محصول برای هر کاربر نگهداری می‌کند، مشخص گردد (در صورتی که محصول قوانین بیشتری هنگام برقراری نشسـت اعمال می‌نماید، ایـن قوانین در «سایر موارد» بیان می‌شوند).",
+          "text": "شناسه کاربر",
+          "source_row_index": 36
+        },
+        {
+          "id": "AFTA-2-3-07.s02",
+          "instruction": "",
+          "text": "نقش‌ها و یا مجموعه دسترسی‌های کاربر به قسمتهای مختلف برنامه",
+          "source_row_index": 37
+        },
+        {
+          "id": "AFTA-2-3-07.s03",
+          "instruction": "",
+          "text": "جزئیات واسط کلاینت",
+          "source_row_index": 38
+        },
+        {
+          "id": "AFTA-2-3-07.s04",
+          "instruction": "",
+          "text": "پیشینه احراز هویت (جزئیات تلاش برای احراز هویت موفق و ناموفق)",
+          "source_row_index": 39
+        },
+        {
+          "id": "AFTA-2-3-07.s05",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 40
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-3-08",
+      "section": "2-3",
+      "number": 8,
+      "category": "رده شناسایی و احراز هویت",
+      "text": "محصول باید در زمان اتصال اولیه کاربر یا همان زمان برقراری نشست توسط کاربر، موارد زیر را اجرا نماید.",
+      "source": {
+        "table_index": 4,
+        "row_index": 41
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-3-08.s01",
+          "instruction": "در صورتی که محصول قوانین بیشـتری هنگام برقراری نشسـت اعمال می‌نماید، ایـن قوانین در «سایر موارد» بیان می‌شوند).",
+          "text": "از بین رفتن اعتبار نشست‌های قبلی هنگام برقراری یک نشست جدید (به جز مواردی که فعال بودن همزمان چندین نشست مورد نیاز کارکردی برنامه باشد. در این موارد، هنگام فعال شدن نشست‌های جدید، باید به صفحه کاربر اصلی (نشست اول) اطلاع داده شود.)",
+          "source_row_index": 42
+        },
+        {
+          "id": "AFTA-2-3-08.s02",
+          "instruction": "",
+          "text": "بروزرسانی اطلاعات پیشینه احراز هویت",
+          "source_row_index": 43
+        },
+        {
+          "id": "AFTA-2-3-08.s03",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 44
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-3-09",
+      "section": "2-3",
+      "number": 9,
+      "category": "رده شناسایی و احراز هویت",
+      "text": "محصول باید بر روی تغییرات ویژگی‌های امنیتی کاربر فعال قوانینی را اعمال نماید.",
+      "source": {
+        "table_index": 4,
+        "row_index": 45
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-3-09.s01",
+          "instruction": "قوانینی که در صورت تغییر ویژگی‌های امنیتی کاربر فعال، اعمال می‌شود، مشخص گردد.",
+          "text": "غیرمجاز بودن هرگونه تغییر در طول نشست فعال",
+          "source_row_index": 46
+        },
+        {
+          "id": "AFTA-2-3-09.s02",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 47
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-4-01",
+      "section": "2-4",
+      "number": 1,
+      "category": "رده حفاظت از داده‌ی کاربری",
+      "text": "محصول باید برای موجودیت‌ها و عملیات، خط‌مشی‌های کنترل دسترسی اعمال نماید.",
+      "source": {
+        "table_index": 5,
+        "row_index": 1
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-4-01.s01",
+          "instruction": "موجودیت‌های فعالی که خطمشی‌های کنترل دسترسی در مورد آنها اعمال می‌شوند، مشخص گردد.",
+          "text": "مدیر سیستم",
+          "source_row_index": 2
+        },
+        {
+          "id": "AFTA-2-4-01.s02",
+          "instruction": "",
+          "text": "کاربر عادی",
+          "source_row_index": 3
+        },
+        {
+          "id": "AFTA-2-4-01.s03",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 4
+        },
+        {
+          "id": "AFTA-2-4-01.s04",
+          "instruction": "موجودیت‌های غیرفعالی که خط‌مشی‌های کنترل دسترسی در مورد آنها اعمال می‌شوند، مشخص گردد.",
+          "text": "سوابق، مستندات و فراداده",
+          "source_row_index": 5
+        },
+        {
+          "id": "AFTA-2-4-01.s05",
+          "instruction": "",
+          "text": "داده متعلق به کاربران",
+          "source_row_index": 6
+        },
+        {
+          "id": "AFTA-2-4-01.s06",
+          "instruction": "",
+          "text": "داده احراز هویت",
+          "source_row_index": 7
+        },
+        {
+          "id": "AFTA-2-4-01.s07",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 8
+        },
+        {
+          "id": "AFTA-2-4-01.s08",
+          "instruction": "عملیاتی که خط‌مشی‌های کنترل دسترسی در رابطه با آنها اعمال می‌شوند، مشخص گردد.",
+          "text": "ایجاد موجودیت غیرفعال جدید",
+          "source_row_index": 9
+        },
+        {
+          "id": "AFTA-2-4-01.s09",
+          "instruction": "",
+          "text": "حذف موجودیت غیرفعال",
+          "source_row_index": 10
+        },
+        {
+          "id": "AFTA-2-4-01.s10",
+          "instruction": "",
+          "text": "تغییر دسترسی‌ها به موجودیت غیرفعال",
+          "source_row_index": 11
+        },
+        {
+          "id": "AFTA-2-4-01.s11",
+          "instruction": "",
+          "text": "عملیات بر روی فراداده وابسته به موجودیت غیرفعال",
+          "source_row_index": 12
+        },
+        {
+          "id": "AFTA-2-4-01.s12",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 13
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-4-02",
+      "section": "2-4",
+      "number": 2,
+      "category": "رده حفاظت از داده‌ی کاربری",
+      "text": "محصول باید بر اساس ویژگی‌های زیر، برای موجودیت‌های غیرفعال خط‌مشی‌های کنترل دسترسی اعمال نماید.",
+      "source": {
+        "table_index": 5,
+        "row_index": 14
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-4-02.s01",
+          "instruction": "ویژگی‌هایی که بر اساس آن خط‌مشی‌ها تعریف می‌شوند، انتخاب گردد.",
+          "text": "نقش‌ها و مجوزهای کاربر مجاز",
+          "source_row_index": 15
+        },
+        {
+          "id": "AFTA-2-4-02.s02",
+          "instruction": "",
+          "text": "اطلاعات نشست کاربر و پارامترهایی که با درخواست فرستاده می‌شوند.",
+          "source_row_index": 16
+        },
+        {
+          "id": "AFTA-2-4-02.s03",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 17
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-4-03",
+      "section": "2-4",
+      "number": 3,
+      "category": "رده حفاظت از داده‌ی کاربری",
+      "text": "محصول باید بر اساس قاعده‌ای عملیات بین موجودیت فعال تحت کنترل و موجودیت غیرفعال کنترل‌شده را مجاز نماید (این قاعده می‌تواند بدین شکل باشد که در فهرست کنترل دسترسی، سابقه (رکوردی) وجود داشته باشد که به کاربر با شناسه کاربری یا شناسه گروه مربوطه یا نقش کاربری تعریف‌شده حق دسترسی به موجودیت غیرفعال را بدهد.)",
+      "source": {
+        "table_index": 5,
+        "row_index": 18
+      },
+      "applies_when_any": [],
+      "details": []
+    },
+    {
+      "id": "AFTA-2-4-04",
+      "section": "2-4",
+      "number": 4,
+      "category": "رده حفاظت از داده‌ی کاربری",
+      "text": "محصول باید بر اساس قوانینی، از دسترسی موجودیت فعال به موجودیت غیرفعال جلوگیری نماید.",
+      "source": {
+        "table_index": 5,
+        "row_index": 19
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-4-04.s01",
+          "instruction": "قوانین ممانعت از دسترسی مشخص شوند (در صورت اعمال قوانین بیشتر توسط محصول، در «سایر موارد» بیان شود).",
+          "text": "عبور تعداد نشست آغاز شده با نام کاربری مشابه از مقدار آستانه از پیش تعریف‌شده",
+          "source_row_index": 20
+        },
+        {
+          "id": "AFTA-2-4-04.s02",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 21
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-4-05",
+      "section": "2-4",
+      "number": 5,
+      "category": "رده حفاظت از داده‌ی کاربری",
+      "text": "محصول باید تضمین نماید تمام اطلاعات قبلی منابع یا در هنگام تخصیص و یا در هنگام آزادسازی آنها، غیرقابل دسترس می‌گردد و یا سازوکاری امن برای دسترسی به منابع قبلی وجود دارد.",
+      "source": {
+        "table_index": 5,
+        "row_index": 22
+      },
+      "applies_when_any": [],
+      "details": []
+    },
+    {
+      "id": "AFTA-2-4-06",
+      "section": "2-4",
+      "number": 6,
+      "category": "رده حفاظت از داده‌ی کاربری",
+      "text": "محصول باید هنگام دریافت داده کاربری خط‌مشی کنترل دسترسی را اعمال و برای این کار از ویژگی‌های امنیتی مرتبط با داده کاربری استفاده کند.",
+      "source": {
+        "table_index": 5,
+        "row_index": 23
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-4-06.s01",
+          "instruction": "ویژگی‌های امنیتی مرتبط با داده کاربری که در هنگام ورود آن به محصول استفاده می‌شوند، مشخص شود (در صورتی که کنترل دسترسی برای موارد دیگری نیز صورت می‌گیرد، در قسمت «سایر موارد» بیان گردد).",
+          "text": "نوع داده",
+          "source_row_index": 24
+        },
+        {
+          "id": "AFTA-2-4-06.s02",
+          "instruction": "",
+          "text": "حجم و اندازه",
+          "source_row_index": 25
+        },
+        {
+          "id": "AFTA-2-4-06.s03",
+          "instruction": "",
+          "text": "فرمت",
+          "source_row_index": 26
+        },
+        {
+          "id": "AFTA-2-4-06.s04",
+          "instruction": "",
+          "text": "تعداد دفعات Import",
+          "source_row_index": 27
+        },
+        {
+          "id": "AFTA-2-4-06.s05",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 28
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-4-07",
+      "section": "2-4",
+      "number": 7,
+      "category": "رده حفاظت از داده‌ی کاربری",
+      "text": "محصول باید از یک پروتکل امن برای انتقال داده استفاده نماید. این پروتکل ارتباط و همبستگی شفافی را بین داده کاربری دریافت‌شده و ویژگی‌های امنیتی آن فراهم و همچنین از شنود و گم‌شدن داده حین انتقال جلوگیری می‌کند.",
+      "source": {
+        "table_index": 5,
+        "row_index": 29
+      },
+      "applies_when_any": [],
+      "details": []
+    },
+    {
+      "id": "AFTA-2-4-08",
+      "section": "2-4",
+      "number": 8,
+      "category": "رده حفاظت از داده‌ی کاربری",
+      "text": "محصول باید هنگام انتقال داده به بیرون از محصول، خط‌مشی کنترل دسترسی را اعمال نماید و برای این کار از ویژگی‌های امنیتی مرتبط با داده کاربری استفاده کند.",
+      "source": {
+        "table_index": 5,
+        "row_index": 30
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-4-08.s01",
+          "instruction": "ویژگی‌های امنیتی مرتبط با داده کاربری که در هنگام خروج آن از محصول استفاده می‌شوند، مشخص شوند",
+          "text": "نوع داده",
+          "source_row_index": 31
+        },
+        {
+          "id": "AFTA-2-4-08.s02",
+          "instruction": "",
+          "text": "حجم و اندازه",
+          "source_row_index": 32
+        },
+        {
+          "id": "AFTA-2-4-08.s03",
+          "instruction": "",
+          "text": "فرمت",
+          "source_row_index": 33
+        },
+        {
+          "id": "AFTA-2-4-08.s04",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 34
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-4-09",
+      "section": "2-4",
+      "number": 9,
+      "category": "رده حفاظت از داده‌ی کاربری",
+      "text": "محصول باید هنگام خروج داده کاربری به خارج از محصول، قوانینی را اعمال نماید.",
+      "source": {
+        "table_index": 5,
+        "row_index": 35
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-4-09.s01",
+          "instruction": "قوانینی که در هنگام خروج داده از محصول اعمال می‌شوند، مشخص شوند",
+          "text": "مدیر سیستم باید خروج داده‌ها را محدود نماید، به طوریکه کاربران محصول، قادر به خروج بدون هدف داده به خارج از محصول نباشند.",
+          "source_row_index": 36
+        },
+        {
+          "id": "AFTA-2-4-09.s02",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 37
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-4-10",
+      "section": "2-4",
+      "number": 10,
+      "category": "رده حفاظت از داده‌ی کاربری",
+      "text": "محصول باید تغییر غیرمجاز را در داده کاربری حساس ذخیره‌شده در محصول تشخیص دهد.",
+      "source": {
+        "table_index": 5,
+        "row_index": 38
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-4-10.s01",
+          "instruction": "چگونگی تشخیص تغییر در داده‌های کاربری حساس، مشخص شود.",
+          "text": "مقدار درهم‌سازی‌شده داده‌های کاربری ذخیره‌شده، نگهداری می‌شود.",
+          "source_row_index": 39
+        },
+        {
+          "id": "AFTA-2-4-10.s02",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 40
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-4-11",
+      "section": "2-4",
+      "number": 11,
+      "category": "رده حفاظت از داده‌ی کاربری",
+      "text": "محصول باید در صورت تشخیص خطای صحت در داده‌ها، اقدامات مقابله‌ای زیر را انجام دهد.",
+      "source": {
+        "table_index": 5,
+        "row_index": 41
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-4-11.s01",
+          "instruction": "اقدام مقابله‌ای در صورت تشخیص خطا، مشخص شود (وجود یک مورد لازم و کافی است)",
+          "text": "ایجاد هشدار/اخطار برای نقش‌های مجاز",
+          "source_row_index": 42
+        },
+        {
+          "id": "AFTA-2-4-11.s02",
+          "instruction": "",
+          "text": "تصحیح داده بر اساس مقادیر قبل",
+          "source_row_index": 43
+        },
+        {
+          "id": "AFTA-2-4-11.s03",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 44
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-5-01",
+      "section": "2-5",
+      "number": 1,
+      "category": "رده مدیریت امنیت",
+      "text": "محصول باید برای مدیر سیستم و هر کاربری که مجوز لازم را دارد، امکان فعالیت‌های مدیریتی زیر را بر روی توابع و تمام کارکردهای مربوط به مدیریت محصول فراهم آورد.",
+      "source": {
+        "table_index": 6,
+        "row_index": 1
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-5-01.s01",
+          "instruction": "فعالیت‌های مدیریتی که محصول پشتیبانی می‌کند، مشخص شوند.",
+          "text": "تعیین و تغییر رفتار",
+          "source_row_index": 2
+        },
+        {
+          "id": "AFTA-2-5-01.s02",
+          "instruction": "",
+          "text": "غیرفعال نمودن",
+          "source_row_index": 3
+        },
+        {
+          "id": "AFTA-2-5-01.s03",
+          "instruction": "",
+          "text": "فعال نمودن",
+          "source_row_index": 4
+        },
+        {
+          "id": "AFTA-2-5-01.s04",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 5
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-5-02",
+      "section": "2-5",
+      "number": 2,
+      "category": "رده مدیریت امنیت",
+      "text": "محصول باید با اعمال خط‌مشی کنترل دسترسی، امکان تغییر پیش‌فرض و عملیات زیر را بر روی ویژگی‌های امنیتی الزام 7 از رده (Class) شناسایی و احراز هویت، به مدیر سیستم و هر کاربری که مجوز لازم را دارد، محدود نماید.",
+      "source": {
+        "table_index": 6,
+        "row_index": 6
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-5-02.s01",
+          "instruction": "عملیات بر روی ویژگی‌های امنیتی که در محصول پشتیبانی می‌شوند، مشخص گردد.",
+          "text": "پرس‌وجو",
+          "source_row_index": 7
+        },
+        {
+          "id": "AFTA-2-5-02.s02",
+          "instruction": "",
+          "text": "تغییر",
+          "source_row_index": 8
+        },
+        {
+          "id": "AFTA-2-5-02.s03",
+          "instruction": "",
+          "text": "حذف",
+          "source_row_index": 9
+        },
+        {
+          "id": "AFTA-2-5-02.s04",
+          "instruction": "",
+          "text": "تغییر پیش‌فرض",
+          "source_row_index": 10
+        },
+        {
+          "id": "AFTA-2-5-02.s05",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 11
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-5-03",
+      "section": "2-5",
+      "number": 3,
+      "category": "رده مدیریت امنیت",
+      "text": "محصول باید برای داده‌های محصول، امکان کارکردهای زیر را به مدیر سیستم و هر کاربری که مجوز لازم را دارد، محدود نماید.",
+      "source": {
+        "table_index": 6,
+        "row_index": 12
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-5-03.s01",
+          "instruction": "عملیات بر روی داده‌های محصول که در محصول پشتیبانی می‌شوند، مشخص شود.",
+          "text": "تغییر پیش‌فرض",
+          "source_row_index": 13
+        },
+        {
+          "id": "AFTA-2-5-03.s02",
+          "instruction": "",
+          "text": "حذف نمودن",
+          "source_row_index": 14
+        },
+        {
+          "id": "AFTA-2-5-03.s03",
+          "instruction": "",
+          "text": "پرس‌وجو",
+          "source_row_index": 15
+        },
+        {
+          "id": "AFTA-2-5-03.s04",
+          "instruction": "",
+          "text": "مقداردهی",
+          "source_row_index": 16
+        },
+        {
+          "id": "AFTA-2-5-03.s05",
+          "instruction": "",
+          "text": "ایجاد",
+          "source_row_index": 17
+        },
+        {
+          "id": "AFTA-2-5-03.s06",
+          "instruction": "",
+          "text": "مشاهده",
+          "source_row_index": 18
+        },
+        {
+          "id": "AFTA-2-5-03.s07",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 19
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-5-04",
+      "section": "2-5",
+      "number": 4,
+      "category": "رده مدیریت امنیت",
+      "text": "محصول باید توانایی انجام کارکردهای زیر را داشته باشد.",
+      "source": {
+        "table_index": 6,
+        "row_index": 20
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-5-04.s01",
+          "instruction": "در صورتی که هرکدام از موارد مطرح‌شده، توسط محصول قابل اجرا نیست، در قسمت توضیحات باید دلایل مطرح گردد.",
+          "text": "پشتیبانی از (حذف، ویرایش، اضافه) گروهی از کاربران با مجوز دسترسی برای خواندن اطلاعات ثبت‌نشان‌ها",
+          "source_row_index": 21
+        },
+        {
+          "id": "AFTA-2-5-04.s02",
+          "instruction": "",
+          "text": "پشتیبانی از مجوزهای مشاهده/ویرایش ثبت‌نشان‌ها",
+          "source_row_index": 22
+        },
+        {
+          "id": "AFTA-2-5-04.s03",
+          "instruction": "",
+          "text": "پشتیبانی از حد آستانه و عملیات (حذف، ویرایش، اضافه) در زمان خرابی ذخیره‌سازی ثبت‌نشان‌ها",
+          "source_row_index": 23
+        },
+        {
+          "id": "AFTA-2-5-04.s04",
+          "instruction": "",
+          "text": "مدیریت معیارها/پارامترهای مورد استفاده برای ایجاد و یا منع دسترسی به محصول",
+          "source_row_index": 24
+        },
+        {
+          "id": "AFTA-2-5-04.s05",
+          "instruction": "",
+          "text": "انتخاب زمان اجرای حفاظت از اطلاعات باقیمانده که می‌تواند در محصول قابل پیکربندی باشد. (برای مثال، زمان تخصیص و یا زمان آزادسازی منابع)",
+          "source_row_index": 25
+        },
+        {
+          "id": "AFTA-2-5-04.s06",
+          "instruction": "",
+          "text": "ویرایش قوانین کنترلی بیشتر برای وارد کردن داده به داخل محصول",
+          "source_row_index": 26
+        },
+        {
+          "id": "AFTA-2-5-04.s07",
+          "instruction": "",
+          "text": "در نظر گرفتن یک عملیات از پیش تعیین‌شده پس از تشخیص یک خطای صحت داده که می‌تواند قابل پیکربندی نیز باشد.",
+          "source_row_index": 27
+        },
+        {
+          "id": "AFTA-2-5-04.s08",
+          "instruction": "",
+          "text": "مدیریت حد آستانه برای تلاش‌های ناموفق\nمدیریت عملیاتی که هنگام شکست احراز هویت باید صورت گیرد.",
+          "source_row_index": 28
+        },
+        {
+          "id": "AFTA-2-5-04.s09",
+          "instruction": "",
+          "text": "مدیریت معیارها برای تنظیم گذرواژه‌ها",
+          "source_row_index": 29
+        },
+        {
+          "id": "AFTA-2-5-04.s10",
+          "instruction": "",
+          "text": "مدیریت داده‌های احراز هویت توسط مدیر یا کاربر مربوطه\nمدیریت یک‌سری عملیاتی که قبل از احراز شدن هویت کاربر انجام می‌شوند.",
+          "source_row_index": 30
+        },
+        {
+          "id": "AFTA-2-5-04.s11",
+          "instruction": "",
+          "text": "مدیریت سازوکارهای احراز هویت\nمدیریت قوانین مرتبط با احراز هویت",
+          "source_row_index": 31
+        },
+        {
+          "id": "AFTA-2-5-04.s12",
+          "instruction": "",
+          "text": "مدیریت تغییرات و فر‌آیندهایی مانند (اختصاص آدرس IP برای عملیات شناسایی کاربر خاص و از این قبیل موارد) که مدیر مجاز می‌تواند قبل از شناسایی کاربر انجام دهد.",
+          "source_row_index": 32
+        },
+        {
+          "id": "AFTA-2-5-04.s13",
+          "instruction": "",
+          "text": "مدیر مجاز می‌تواند ویژگی‌های امنیتی موجودیت‌های فعال پیش‌فرض را تعریف کند و تغییر دهد.",
+          "source_row_index": 33
+        },
+        {
+          "id": "AFTA-2-5-04.s14",
+          "instruction": "",
+          "text": "مدیریت مقادیر پیش‌فرض برای کنترل دسترسی محصول",
+          "source_row_index": 34
+        },
+        {
+          "id": "AFTA-2-5-04.s15",
+          "instruction": "",
+          "text": "مدیریت نقش‌ها در محصول",
+          "source_row_index": 35
+        },
+        {
+          "id": "AFTA-2-5-04.s16",
+          "instruction": "",
+          "text": "مدیریت حداکثر تعداد مجاز نشست‌های همزمان کاربران توسط مدیر",
+          "source_row_index": 36
+        },
+        {
+          "id": "AFTA-2-5-04.s17",
+          "instruction": "",
+          "text": "مدیریت شرایط آغاز نشست توسط مدیر مجاز",
+          "source_row_index": 37
+        },
+        {
+          "id": "AFTA-2-5-04.s18",
+          "instruction": "",
+          "text": "تعیین زمان غیرفعال بودن برای یک کاربر مشخص که پس از آن، نشست آن کاربر خاتمه یابد.\nتعیین زمان پیش‌فرض غیرفعال بودن کاربران که پس از آن، نشست خاتمه یابد.",
+          "source_row_index": 38
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-5-05",
+      "section": "2-5",
+      "number": 5,
+      "category": "رده مدیریت امنیت",
+      "text": "محصول باید توانایی تعریف نقش‌های مختلف را داشته باشد.",
+      "source": {
+        "table_index": 6,
+        "row_index": 39
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-5-05.s01",
+          "instruction": "نقش‌هایی که در محصول پشتیبانی می‌شوند، مشخص گردد.",
+          "text": "مدیر سیستم",
+          "source_row_index": 40
+        },
+        {
+          "id": "AFTA-2-5-05.s02",
+          "instruction": "",
+          "text": "کاربر پیشرفته",
+          "source_row_index": 41
+        },
+        {
+          "id": "AFTA-2-5-05.s03",
+          "instruction": "",
+          "text": "کاربر عادی",
+          "source_row_index": 42
+        },
+        {
+          "id": "AFTA-2-5-05.s04",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 43
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-5-06",
+      "section": "2-5",
+      "number": 6,
+      "category": "رده مدیریت امنیت",
+      "text": "محصول باید قادر باشد کاربران را به نقش‌های تعریف‌شده یا قابل تعریف مرتبط نماید، همچنین لازم است هر حساب کاربری تنها به یک نقش مرتبط شده باشد، اما ممکن است نقش‌ها تنها به یک کاربر محدود نشوند و چندین کاربر نقش مشابهی داشته باشند.",
+      "source": {
+        "table_index": 6,
+        "row_index": 44
+      },
+      "applies_when_any": [],
+      "details": []
+    },
+    {
+      "id": "AFTA-2-6-01",
+      "section": "2-6",
+      "number": 1,
+      "category": "رده حفاظت از توابع امنیتی محصول",
+      "text": "محصول باید هنگام رخ دادن هرگونه خرابی، اشکال یا شکست مانند از کار افتادن محصول، قطع شدن ارتباط محصول با پایگاه داده و یا اختلال در کارکردهای محصول، در وضعیت امنی قرار گرفته، صحت داده‌ها و خط‌مشی کنترل دسترسی را حفظ نماید.",
+      "source": {
+        "table_index": 7,
+        "row_index": 1
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-6-01.s01",
+          "instruction": "هر یکی از مواردی که در صورت رخداد آن، وضعیت امن محصول حفظ می‌شود، مشخص گردد.",
+          "text": "خرابی‌های نرم‌افزاری",
+          "source_row_index": 2
+        },
+        {
+          "id": "AFTA-2-6-01.s02",
+          "instruction": "",
+          "text": "خرابی‌های سخت‌افزاری",
+          "source_row_index": 3
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-6-02",
+      "section": "2-6",
+      "number": 2,
+      "category": "رده حفاظت از توابع امنیتی محصول",
+      "text": "محصول باید از طریق فراهم نمودن بستر و زیرساخت امن، توانایی جلوگیری از افشاء یا تغییر داده، هنگام انتقال بین بخش‌های مجزای خود را داشته باشد.",
+      "source": {
+        "table_index": 7,
+        "row_index": 4
+      },
+      "applies_when_any": [],
+      "details": []
+    },
+    {
+      "id": "AFTA-2-6-03",
+      "section": "2-6",
+      "number": 3,
+      "category": "رده حفاظت از توابع امنیتی محصول",
+      "text": "در صورتی که محصول از محصولات امن IT دیگری استفاده می‌کند، باید تفسیر سازگار و یکسانی را از داده امنیتی در زمان اشتراک‌گذاری آن بین خود و دیگر محصولات امن IT، فراهم آورد.",
+      "source": {
+        "table_index": 7,
+        "row_index": 5
+      },
+      "applies_when_any": [
+        "external_security_products"
+      ],
+      "details": [
+        {
+          "id": "AFTA-2-6-03.s01",
+          "instruction": "داده امنیتی قابل اشتراک‌گذاری که در محصول پشتیبانی مـی‌شوند، مشخص گردد.",
+          "text": "داده‌های احراز هویت",
+          "source_row_index": 6
+        },
+        {
+          "id": "AFTA-2-6-03.s02",
+          "instruction": "",
+          "text": "کلید",
+          "source_row_index": 7
+        },
+        {
+          "id": "AFTA-2-6-03.s03",
+          "instruction": "",
+          "text": "امضای دیجیتال",
+          "source_row_index": 8
+        },
+        {
+          "id": "AFTA-2-6-03.s04",
+          "instruction": "",
+          "text": "ثبت‌نشان‌ها (داده‌های ممیزی)",
+          "source_row_index": 9
+        },
+        {
+          "id": "AFTA-2-6-03.s05",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 10
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-6-04",
+      "section": "2-6",
+      "number": 4,
+      "category": "رده حفاظت از توابع امنیتی محصول",
+      "text": "محصول باید زمان و تاریخ معتبری داشته باشد، بنابراین باید مهرهای زمانی معتبر را تولید یا از آن‌ها استفاده نماید.",
+      "source": {
+        "table_index": 7,
+        "row_index": 11
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-6-04.s01",
+          "instruction": "روش‌های ایجاد مهرهای زمانی معتبر انتخاب شود. (دیگـر روشهای موجـود در محصول، در قسـمت «سایر مـوارد» بیـان شود).",
+          "text": "گرفتن مهرهای زمانی از سرور NTP",
+          "source_row_index": 12
+        },
+        {
+          "id": "AFTA-2-6-04.s02",
+          "instruction": "",
+          "text": "تنظیم مهرهای زمانی از طریق اینترنت",
+          "source_row_index": 13
+        },
+        {
+          "id": "AFTA-2-6-04.s03",
+          "instruction": "",
+          "text": "تنظیم مهرهای زمانی به صورت پیش‌فرض (معتبر و عدم امکان دستکاری غیرمجاز)",
+          "source_row_index": 14
+        },
+        {
+          "id": "AFTA-2-6-04.s04",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 15
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-6-05",
+      "section": "2-6",
+      "number": 5,
+      "category": "رده حفاظت از توابع امنیتی محصول",
+      "text": "محصول باید امکان بروزرسانی نرم‌افزار و میان‌افزار محصول را برای مدیر سیستم فراهم نماید.",
+      "source": {
+        "table_index": 7,
+        "row_index": 16
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-6-05.s01",
+          "instruction": "روش بروزرسانی مورد استفاده در محصول، مشخص گردد (حـداقل یک مورد لازم و کافی است).",
+          "text": "بروزرسانی دستی",
+          "source_row_index": 17
+        },
+        {
+          "id": "AFTA-2-6-05.s02",
+          "instruction": "",
+          "text": "جستجوی خودکار بروزرسانی‌ها",
+          "source_row_index": 18
+        },
+        {
+          "id": "AFTA-2-6-05.s03",
+          "instruction": "",
+          "text": "بروزرسانی‌های خودکار",
+          "source_row_index": 19
+        },
+        {
+          "id": "AFTA-2-6-05.s04",
+          "instruction": "",
+          "text": "بروزرسانی دستی بعد از اطمینان از امنیت وصله و یا فایل بروزرسانی",
+          "source_row_index": 20
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-6-06",
+      "section": "2-6",
+      "number": 6,
+      "category": "رده حفاظت از توابع امنیتی محصول",
+      "text": "در صورت استفاده از بروزرسانی به روش خودکار، محصول باید پیش از نصب بروزرسانی‌های نرم‌افزاری و میان‌افزاری، امکان احراز اصالت میان‌افزار یا نرم‌افزار را فراهم نماید.",
+      "source": {
+        "table_index": 7,
+        "row_index": 21
+      },
+      "applies_when_any": [
+        "automatic_updates"
+      ],
+      "details": [
+        {
+          "id": "AFTA-2-6-06.s01",
+          "instruction": "سازوکار مورد استفاده برای صحت‌سنجی (اصالت سنجی) به‌روزرسانی‌ها انتخاب گردد.",
+          "text": "امضای دیجیتال",
+          "source_row_index": 22
+        },
+        {
+          "id": "AFTA-2-6-06.s02",
+          "instruction": "",
+          "text": "درهم‌ساز منتشرشده",
+          "source_row_index": 23
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-7-01",
+      "section": "2-7",
+      "number": 1,
+      "category": "رده تخصیص منابع",
+      "text": "محصول باید در زمان رخداد هرگونه اشکال و خرابی (شکست) نرم‌افزاری، از عملکرد کارکردهای اصلی محصول اطمینان حاصل نماید.",
+      "source": {
+        "table_index": 8,
+        "row_index": 1
+      },
+      "applies_when_any": [],
+      "details": []
+    },
+    {
+      "id": "AFTA-2-8-01",
+      "section": "2-8",
+      "number": 1,
+      "category": "رده دسترسی به محصول",
+      "text": "محصول باید حداکثر تعداد نشست‌های همزمان متعلق به یک کاربر را محدود نماید.",
+      "source": {
+        "table_index": 9,
+        "row_index": 1
+      },
+      "applies_when_any": [],
+      "details": []
+    },
+    {
+      "id": "AFTA-2-8-02",
+      "section": "2-8",
+      "number": 2,
+      "category": "رده دسترسی به محصول",
+      "text": "محصول باید کلیه نشست‌های تعاملی راه‌دور را پس از مدت زمانی که غیرفعال هستند (و می‌بایست توسط مدیر قابل تنظیم باشد)، خاتمه دهد.",
+      "source": {
+        "table_index": 9,
+        "row_index": 2
+      },
+      "applies_when_any": [],
+      "details": []
+    },
+    {
+      "id": "AFTA-2-8-03",
+      "section": "2-8",
+      "number": 3,
+      "category": "رده دسترسی به محصول",
+      "text": "محصول باید به کاربری که خود آغازگر نشست بوده است اجازه‌ی خاتمه نشست را بدهد.",
+      "source": {
+        "table_index": 9,
+        "row_index": 3
+      },
+      "applies_when_any": [],
+      "details": []
+    },
+    {
+      "id": "AFTA-2-8-04",
+      "section": "2-8",
+      "number": 4,
+      "category": "رده دسترسی به محصول",
+      "text": "در صورت برقراری نشست به طور موفقیت‌آمیز، محصول باید قادر به نمایش آخرین تلاش موفق برای ایجاد نشست بر اساس موارد زیر باشد.",
+      "source": {
+        "table_index": 9,
+        "row_index": 4
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-8-04.s01",
+          "instruction": "انتخاب یک مورد لازم و کافی است.",
+          "text": "روز",
+          "source_row_index": 5
+        },
+        {
+          "id": "AFTA-2-8-04.s02",
+          "instruction": "",
+          "text": "زمان",
+          "source_row_index": 6
+        },
+        {
+          "id": "AFTA-2-8-04.s03",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 7
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-8-05",
+      "section": "2-8",
+      "number": 5,
+      "category": "رده دسترسی به محصول",
+      "text": "در صورت برقراری نشست به طور موفقیت آمیز، محصول باید قادر به نمایش آخرین تلاش ناموفق برای ایجاد نشست بر اساس موارد زیر و تعداد تلاش‌های ناموفق تا آخرین ایجاد نشست موفقیت‌آمیز باشد.",
+      "source": {
+        "table_index": 9,
+        "row_index": 8
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-8-05.s01",
+          "instruction": "انتخاب یک مورد لازم و کافی است.",
+          "text": "روز",
+          "source_row_index": 9
+        },
+        {
+          "id": "AFTA-2-8-05.s02",
+          "instruction": "",
+          "text": "زمان",
+          "source_row_index": 10
+        },
+        {
+          "id": "AFTA-2-8-05.s03",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 11
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-8-06",
+      "section": "2-8",
+      "number": 6,
+      "category": "رده دسترسی به محصول",
+      "text": "محصول نباید اطلاعات سوابق دسترسی را بدون بازدید کاربر، از واسط کاربری پاک نماید.",
+      "source": {
+        "table_index": 9,
+        "row_index": 12
+      },
+      "applies_when_any": [],
+      "details": []
+    },
+    {
+      "id": "AFTA-2-8-07",
+      "section": "2-8",
+      "number": 7,
+      "category": "رده دسترسی به محصول",
+      "text": "محصول باید توانایی ممانعت از ایجاد نشست بر اساس پارامترهایی را داشته باشد.",
+      "source": {
+        "table_index": 9,
+        "row_index": 13
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-8-07.s01",
+          "instruction": "پارامترهای موجود برای جلوگیری از نشسـت، مشخص شوند (وجود یـک مورد لازم و کافی است).",
+          "text": "مکان",
+          "source_row_index": 14
+        },
+        {
+          "id": "AFTA-2-8-07.s02",
+          "instruction": "",
+          "text": "شماره پورت",
+          "source_row_index": 15
+        },
+        {
+          "id": "AFTA-2-8-07.s03",
+          "instruction": "",
+          "text": "روز",
+          "source_row_index": 16
+        },
+        {
+          "id": "AFTA-2-8-07.s04",
+          "instruction": "",
+          "text": "زمان",
+          "source_row_index": 17
+        },
+        {
+          "id": "AFTA-2-8-07.s05",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 18
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-9-01",
+      "section": "2-9",
+      "number": 1,
+      "category": "رده کانال‌ها/مسیرهای مورد اعتماد",
+      "text": "محصول باید قادر باشد مسیر ارتباطی امنی بین خود، کاربران و دیگر محصولات IT فراهم نماید که به طور منطقی از دیگر کانال‌ها متمایز باشد. سپس از طریق این کانال احراز هویت را انجام دهد و از تغییر و افشای داده تبادلی حفاظت نماید و تغییرات را تشخیص دهد.\nدر صورت انتخاب مورد HTTPS، رعایت الزام ‏3-1- و ‏3-3- و در صورت انتخاب TLS، رعایت الزامات ‏3-2- تا ‏3-4- که در بخش ‏3- بیان گردیده است، الزامی است.",
+      "source": {
+        "table_index": 10,
+        "row_index": 1
+      },
+      "applies_when_any": [],
+      "details": [
+        {
+          "id": "AFTA-2-9-01.s01",
+          "instruction": "پروتکل مورد استفاده برای ایجاد کانال امن انتخاب گردد.",
+          "text": "HTTPS",
+          "source_row_index": 2
+        },
+        {
+          "id": "AFTA-2-9-01.s02",
+          "instruction": "",
+          "text": "TLS",
+          "source_row_index": 3
+        },
+        {
+          "id": "AFTA-2-9-01.s03",
+          "instruction": "",
+          "text": "SSH",
+          "source_row_index": 4
+        }
+      ]
+    },
+    {
+      "id": "AFTA-2-9-02",
+      "section": "2-9",
+      "number": 2,
+      "category": "رده کانال‌ها/مسیرهای مورد اعتماد",
+      "text": "محصول باید به کاربر/دیگر محصول IT معتبر اجازه دهد که ارتباطات راه‌دور را از طریق کانال امن آغاز کنند.",
+      "source": {
+        "table_index": 10,
+        "row_index": 5
+      },
+      "applies_when_any": [],
+      "details": []
+    },
+    {
+      "id": "AFTA-2-9-03",
+      "section": "2-9",
+      "number": 3,
+      "category": "رده کانال‌ها/مسیرهای مورد اعتماد",
+      "text": "محصول باید استفاده از کانال امن را برای احراز هویت اولیه کاربر الزامی نماید.",
+      "source": {
+        "table_index": 10,
+        "row_index": 6
+      },
+      "applies_when_any": [],
+      "details": []
+    },
+    {
+      "id": "AFTA-3-1-01",
+      "section": "3-1",
+      "number": 1,
+      "category": "پروتکل HTTPS",
+      "text": "محصول باید پروتکل HTTPS را مطابق با RFC 2818 اجرا کند.",
+      "source": {
+        "table_index": 11,
+        "row_index": 1
+      },
+      "applies_when_any": [
+        "https"
+      ],
+      "details": []
+    },
+    {
+      "id": "AFTA-3-1-02",
+      "section": "3-1",
+      "number": 2,
+      "category": "پروتکل HTTPS",
+      "text": "محصول باید پروتکل HTTPS را با استفاده از TLS اجرا کند.",
+      "source": {
+        "table_index": 11,
+        "row_index": 2
+      },
+      "applies_when_any": [
+        "https"
+      ],
+      "details": []
+    },
+    {
+      "id": "AFTA-3-1-03",
+      "section": "3-1",
+      "number": 3,
+      "category": "پروتکل HTTPS",
+      "text": "در صورتی که گواهی‌نامه ارائه شده از سمت دیگر محصولات IT (درهنگام برقراری ارتباط) نامعتبر باشد، محصول باید بر اساس موارد زیر عمل نماید.\nاعتبارسنجی گواهی‌نامه بر اساس الزامات بخش ‏3-5- انجام می‌شود که در این صورت الزامات بخش ‏3-5- الزامی است.",
+      "source": {
+        "table_index": 11,
+        "row_index": 3
+      },
+      "applies_when_any": [
+        "https"
+      ],
+      "details": [
+        {
+          "id": "AFTA-3-1-03.s01",
+          "instruction": "محصول تنها از موارد بیان‌شده می‌تواند استفاده نماید.",
+          "text": "اتصال را برقرار نکند.",
+          "source_row_index": 4
+        },
+        {
+          "id": "AFTA-3-1-03.s02",
+          "instruction": "",
+          "text": "برای برقراری اتصال درخواست مجوز کند.",
+          "source_row_index": 5
+        }
+      ]
+    },
+    {
+      "id": "AFTA-3-2-01",
+      "section": "3-2",
+      "number": 1,
+      "category": "پروتکل TLS Client",
+      "text": "محصول باید TLS 1.2 (RFC 5246) را پیاده‌سازی و دیگر نسخه‌های TLS و SSL را رد کند. همچنین محصول باید TLS را با پشتیبانی از مجموعه‌های رمز زیر پیاده‌سازی نماید.",
+      "source": {
+        "table_index": 12,
+        "row_index": 1
+      },
+      "applies_when_any": [
+        "tls",
+        "tls_client"
+      ],
+      "details": [
+        {
+          "id": "AFTA-3-2-01.s01",
+          "instruction": "ﻣﺠﻤﻮﻋﻪ رﻣﺰ ﻣﻮرد اﺳﺘﻔﺎده و ﭘﻴﺎده‌ﺳﺎزی‌شده ﻣﺤﺼﻮل، اﻧﺘﺨﺎب ﮔﺮدد.",
+          "text": "TLS_AES_256_GCM_SHA384\n0x1302\nمطابق با RFC 8446",
+          "source_row_index": 2
+        },
+        {
+          "id": "AFTA-3-2-01.s02",
+          "instruction": "",
+          "text": "TLS_AES_128_GCM_SHA256\n0x1301\nمطابق با RFC 8446",
+          "source_row_index": 3
+        },
+        {
+          "id": "AFTA-3-2-01.s03",
+          "instruction": "",
+          "text": "TLS_DHE_RSA_WITH_AES_256_GCM_SHA384\n0x009F\nمطابق با RFC 5288",
+          "source_row_index": 4
+        },
+        {
+          "id": "AFTA-3-2-01.s04",
+          "instruction": "",
+          "text": "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256\n0x009E\nمطابق با RFC 5288",
+          "source_row_index": 5
+        },
+        {
+          "id": "AFTA-3-2-01.s05",
+          "instruction": "",
+          "text": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256\n0xC02F\nمطابق با RFC 5289",
+          "source_row_index": 6
+        },
+        {
+          "id": "AFTA-3-2-01.s06",
+          "instruction": "",
+          "text": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384\n0xC030\nمطابق با RFC 5289",
+          "source_row_index": 7
+        },
+        {
+          "id": "AFTA-3-2-01.s07",
+          "instruction": "",
+          "text": "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384\n0xC02C\nمطابق با RFC 5289",
+          "source_row_index": 8
+        },
+        {
+          "id": "AFTA-3-2-01.s08",
+          "instruction": "",
+          "text": "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256\n0xC02B\nمطابق با RFC 5289",
+          "source_row_index": 9
+        },
+        {
+          "id": "AFTA-3-2-01.s09",
+          "instruction": "",
+          "text": "TLS_RSA_WITH_AES_256_GCM_SHA384\n0x009D\nمطابق با RFC 5288",
+          "source_row_index": 10
+        },
+        {
+          "id": "AFTA-3-2-01.s10",
+          "instruction": "",
+          "text": "TLS_RSA_WITH_AES_128_GCM_SHA256\n0x009C\nمطابق با RFC 5288",
+          "source_row_index": 11
+        },
+        {
+          "id": "AFTA-3-2-01.s11",
+          "instruction": "",
+          "text": "TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384\n0xC02E\nمطابق با RFC 5288",
+          "source_row_index": 12
+        },
+        {
+          "id": "AFTA-3-2-01.s12",
+          "instruction": "",
+          "text": "TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256\n0xC02D\nمطابق با RFC 5289",
+          "source_row_index": 13
+        },
+        {
+          "id": "AFTA-3-2-01.s13",
+          "instruction": "",
+          "text": "TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384\n0xC032\nمطابق با RFC 5289",
+          "source_row_index": 14
+        },
+        {
+          "id": "AFTA-3-2-01.s14",
+          "instruction": "",
+          "text": "TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256\n0xC031\nمطابق با RFC 5289",
+          "source_row_index": 15
+        },
+        {
+          "id": "AFTA-3-2-01.s15",
+          "instruction": "",
+          "text": "TLS_DH_RSA_WITH_AES_256_GCM_SHA384\n0x00A1\nمطابق با RFC 5288",
+          "source_row_index": 16
+        },
+        {
+          "id": "AFTA-3-2-01.s16",
+          "instruction": "",
+          "text": "TLS_DH_RSA_WITH_AES_128_GCM_SHA256\n0x00A0\nمطابق با RFC 5288",
+          "source_row_index": 17
+        }
+      ]
+    },
+    {
+      "id": "AFTA-3-2-02",
+      "section": "3-2",
+      "number": 2,
+      "category": "پروتکل TLS Client",
+      "text": "محصول باید مطابقت شناسه ارائه‌شده با شناسه مرجع را با توجه به بخش 6 از RFC 6125، تأیید نماید.",
+      "source": {
+        "table_index": 12,
+        "row_index": 18
+      },
+      "applies_when_any": [
+        "tls",
+        "tls_client"
+      ],
+      "details": []
+    },
+    {
+      "id": "AFTA-3-2-03",
+      "section": "3-2",
+      "number": 3,
+      "category": "پروتکل TLS Client",
+      "text": "محصول باید کانال امن را فقط در صورت معتبر بودن گواهی‌نامه سرور برقرار سازد؛ بنابراین اگر گواهی‌نامه سرور غیرمعتبر به نظر رسید، محصول باید بر اساس موارد زیر رفتار نماید.",
+      "source": {
+        "table_index": 12,
+        "row_index": 19
+      },
+      "applies_when_any": [
+        "tls",
+        "tls_client"
+      ],
+      "details": [
+        {
+          "id": "AFTA-3-2-03.s01",
+          "instruction": "در صورت پشتیبانی از اقدامات دیگر، در «سایر موارد» بیان گردد.",
+          "text": "ارتباط را برقرار نکند",
+          "source_row_index": 20
+        },
+        {
+          "id": "AFTA-3-2-03.s02",
+          "instruction": "",
+          "text": "برای برقراری ارتباط درخواست مجوز کند",
+          "source_row_index": 21
+        },
+        {
+          "id": "AFTA-3-2-03.s03",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 22
+        }
+      ]
+    },
+    {
+      "id": "AFTA-3-2-04",
+      "section": "3-2",
+      "number": 4,
+      "category": "پروتکل TLS Client",
+      "text": "محصول باید در پیام ClientHello برای استفاده از خم‌های بیضوی، بر اساس موارد زیر عمل نماید.",
+      "source": {
+        "table_index": 12,
+        "row_index": 23
+      },
+      "applies_when_any": [
+        "tls",
+        "tls_client"
+      ],
+      "details": [
+        {
+          "id": "AFTA-3-2-04.s01",
+          "instruction": "در صورتی که محصول از خم‌های بیضوی استفاده می‌نماید، نوع خم باید مشخص گردد.",
+          "text": "Supported Elliptic Curves Extension را ارائه نکند.",
+          "source_row_index": 24
+        },
+        {
+          "id": "AFTA-3-2-04.s02",
+          "instruction": "",
+          "text": "Supported Elliptic Curves Extension را به همراه NIST Curveهای secp256r1 یا secp384r1 یا secp521r1 ارائه نماید.",
+          "source_row_index": 25
+        }
+      ]
+    },
+    {
+      "id": "AFTA-3-3-01",
+      "section": "3-3",
+      "number": 1,
+      "category": "پروتکل TLS Server",
+      "text": "محصول باید TLS 1.2 (RFC 5246) را پیاده‌سازی کند. همچنین محصول باید TLS را با پشتیبانی از مجموعه‌های رمز زیر پیاده‌سازی نماید.",
+      "source": {
+        "table_index": 13,
+        "row_index": 1
+      },
+      "applies_when_any": [
+        "https",
+        "tls",
+        "tls_server"
+      ],
+      "details": [
+        {
+          "id": "AFTA-3-3-01.s01",
+          "instruction": "ﻣﺠﻤﻮﻋﻪ رﻣﺰ ﻣﻮرد اﺳﺘﻔﺎده و پیاده‌سازی ﺷﺪه ﻣﺤﺼﻮل، اﻧﺘﺨﺎب ﮔﺮدد.",
+          "text": "TLS_AES_256_GCM_SHA384\n0x1302\nمطابق با RFC 8446",
+          "source_row_index": 2
+        },
+        {
+          "id": "AFTA-3-3-01.s02",
+          "instruction": "",
+          "text": "TLS_AES_128_GCM_SHA256\n0x1301\nمطابق با RFC 8446",
+          "source_row_index": 3
+        },
+        {
+          "id": "AFTA-3-3-01.s03",
+          "instruction": "",
+          "text": "TLS_DHE_RSA_WITH_AES_256_GCM_SHA384\n0x009F\nمطابق با RFC 5288",
+          "source_row_index": 4
+        },
+        {
+          "id": "AFTA-3-3-01.s04",
+          "instruction": "",
+          "text": "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256\n0x009E\nمطابق با RFC 5288",
+          "source_row_index": 5
+        },
+        {
+          "id": "AFTA-3-3-01.s05",
+          "instruction": "",
+          "text": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256\n0xC02F\nمطابق با RFC 5289",
+          "source_row_index": 6
+        },
+        {
+          "id": "AFTA-3-3-01.s06",
+          "instruction": "",
+          "text": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384\n0xC030\nمطابق با RFC 5289",
+          "source_row_index": 7
+        },
+        {
+          "id": "AFTA-3-3-01.s07",
+          "instruction": "",
+          "text": "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384\n0xC02C\nمطابق با RFC 5289",
+          "source_row_index": 8
+        },
+        {
+          "id": "AFTA-3-3-01.s08",
+          "instruction": "",
+          "text": "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256\n0xC02B\nمطابق با RFC 5289",
+          "source_row_index": 9
+        },
+        {
+          "id": "AFTA-3-3-01.s09",
+          "instruction": "",
+          "text": "TLS_RSA_WITH_AES_256_GCM_SHA384\n0x009D\nمطابق با RFC 5288",
+          "source_row_index": 10
+        },
+        {
+          "id": "AFTA-3-3-01.s10",
+          "instruction": "",
+          "text": "TLS_RSA_WITH_AES_128_GCM_SHA256\n0x009C\nمطابق با RFC 5288",
+          "source_row_index": 11
+        },
+        {
+          "id": "AFTA-3-3-01.s11",
+          "instruction": "",
+          "text": "TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384\n0xC02E\nمطابق با RFC 5288",
+          "source_row_index": 12
+        },
+        {
+          "id": "AFTA-3-3-01.s12",
+          "instruction": "",
+          "text": "TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256\n0xC02D\nمطابق با RFC 5289",
+          "source_row_index": 13
+        },
+        {
+          "id": "AFTA-3-3-01.s13",
+          "instruction": "",
+          "text": "TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384\n0xC032\nمطابق با RFC 5289",
+          "source_row_index": 14
+        },
+        {
+          "id": "AFTA-3-3-01.s14",
+          "instruction": "",
+          "text": "TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256\n0xC031\nمطابق با RFC 5289",
+          "source_row_index": 15
+        },
+        {
+          "id": "AFTA-3-3-01.s15",
+          "instruction": "",
+          "text": "TLS_DH_RSA_WITH_AES_256_GCM_SHA384\n0x00A1\nمطابق با RFC 5288",
+          "source_row_index": 16
+        },
+        {
+          "id": "AFTA-3-3-01.s16",
+          "instruction": "",
+          "text": "TLS_DH_RSA_WITH_AES_128_GCM_SHA256\n0x00A0\nمطابق با RFC 5288",
+          "source_row_index": 17
+        }
+      ]
+    },
+    {
+      "id": "AFTA-3-3-02",
+      "section": "3-3",
+      "number": 2,
+      "category": "پروتکل TLS Server",
+      "text": "محصول باید اتصال‌های کاربرانی که درخواست SSL1.0، SSL2.0، SSL3.0، TLS1.0 و TLS1.1 دارند را رد نماید.",
+      "source": {
+        "table_index": 13,
+        "row_index": 18
+      },
+      "applies_when_any": [
+        "https",
+        "tls",
+        "tls_server"
+      ],
+      "details": []
+    },
+    {
+      "id": "AFTA-3-3-03",
+      "section": "3-3",
+      "number": 3,
+      "category": "پروتکل TLS Server",
+      "text": "محصول باید پارامترهای ساخت کلید را بر اساس موارد زیر ایجاد نماید.",
+      "source": {
+        "table_index": 13,
+        "row_index": 19
+      },
+      "applies_when_any": [
+        "https",
+        "tls",
+        "tls_server"
+      ],
+      "details": [
+        {
+          "id": "AFTA-3-3-03.s01",
+          "instruction": "طولی کلید یا نوع خم مورد استفاده باید مشخص گردد.",
+          "text": "استفاده از RSA با اندازه کلید 2048 یا 3072 یا 4096 بیت",
+          "source_row_index": 20
+        },
+        {
+          "id": "AFTA-3-3-03.s02",
+          "instruction": "",
+          "text": "پارامترهای ECDH(E) با استفاده از NIST Curveهای secp256r1 یا secp384r1 یا secp521r1 و هیچ مورد دیگر",
+          "source_row_index": 21
+        },
+        {
+          "id": "AFTA-3-3-03.s03",
+          "instruction": "",
+          "text": "پارامترهای دیفی-هلمن با اندازه کلید 2048 یا 3072 بیت",
+          "source_row_index": 22
+        }
+      ]
+    },
+    {
+      "id": "AFTA-3-4-01",
+      "section": "3-4",
+      "number": 1,
+      "category": "پروتکل TLS مشترک کلاینت و سرور",
+      "text": "محصول باید احراز هویت دوطرفه کلاینت‌ها/سرورهای TLS را با استفاده از گواهی‌نامه‌های X509v3 پشتیبانی نماید.",
+      "source": {
+        "table_index": 14,
+        "row_index": 1
+      },
+      "applies_when_any": [
+        "tls"
+      ],
+      "details": []
+    },
+    {
+      "id": "AFTA-3-4-02",
+      "section": "3-4",
+      "number": 2,
+      "category": "پروتکل TLS مشترک کلاینت و سرور",
+      "text": "در صورت مطابقت نداشتن نام متمایز یا نام دیگر فاعل موجود در گواهی‌نامه، با آنچه از شناساننده کلاینت مورد انتظار بوده است، محصول نباید کانال امن را برقرار سازد.",
+      "source": {
+        "table_index": 14,
+        "row_index": 2
+      },
+      "applies_when_any": [
+        "tls"
+      ],
+      "details": []
+    },
+    {
+      "id": "AFTA-3-5-01",
+      "section": "3-5",
+      "number": 1,
+      "category": "اعتبارسنجی گواهی‌نامه",
+      "text": "محصول باید گواهی‌نامه‌ها را بر اساس قوانین زیر تأیید کند.",
+      "source": {
+        "table_index": 15,
+        "row_index": 1
+      },
+      "applies_when_any": [
+        "https",
+        "tls",
+        "tls_client",
+        "tls_server",
+        "certificate_validation"
+      ],
+      "details": [
+        {
+          "id": "AFTA-3-5-01.s01",
+          "instruction": "",
+          "text": "تأیید گواهی‌نامه RFC 5280 و تأیید مسیر گواهی‌نامه که از حداقل طول مسیر دو گواهی‌نامه پشتیبانی می‌کند.",
+          "source_row_index": 2
+        },
+        {
+          "id": "AFTA-3-5-01.s02",
+          "instruction": "",
+          "text": "مسیر گواهی‌نامه باید با یک گواهی‌نامه CA امن پایان یابد.",
+          "source_row_index": 3
+        },
+        {
+          "id": "AFTA-3-5-01.s03",
+          "instruction": "",
+          "text": "محصول باید برای تأیید مسیر یک گواهی‌نامه، اطمینان حاصل نماید که افزونه basicConstraints وجود دارد و پرچم CA برای تمام گواهی‌نامه‌های CA به حالت «TRUE» تنظیم شده است.",
+          "source_row_index": 4
+        },
+        {
+          "id": "AFTA-3-5-01.s04",
+          "instruction": "روش‌های تأیید وضعیت فسخ گواهی‌نامه",
+          "text": "پروتکل وضعیت گواهی‌نامه آنلاین (OCSP) مشخص‌شده در RFC 696",
+          "source_row_index": 5
+        },
+        {
+          "id": "AFTA-3-5-01.s05",
+          "instruction": "",
+          "text": "لیست فسخ گواهی‌نامه (CRL) مشخص شده در RFC 5280 بخش 6.3",
+          "source_row_index": 6
+        },
+        {
+          "id": "AFTA-3-5-01.s06",
+          "instruction": "",
+          "text": "لیست فسخ گواهی‌نامه (CRL) مشخص شده در RFC 5759 بخش 5",
+          "source_row_index": 7
+        },
+        {
+          "id": "AFTA-3-5-01.s07",
+          "instruction": "",
+          "text": "هیچ روش فسخ دیگری",
+          "source_row_index": 8
+        },
+        {
+          "id": "AFTA-3-5-01.s08",
+          "instruction": "قوانین تأیید بخش extendedKeyUsage",
+          "text": "گواهی‌نامه‌های مورد استفاده برای تأیید بروزرسانی‌های امن و اعتبارسنجی صحت کدهای اجرایی باید هدف «Code Signing» (id-kp3 با OID 1.3.6.1.5.5.7.3.1) را در بخش extendedKeyUsage خود داشته باشند.",
+          "source_row_index": 9
+        },
+        {
+          "id": "AFTA-3-5-01.s09",
+          "instruction": "",
+          "text": "گواهی‌نامه‌های سرور ارائه شده برای TLS باید هدف «Server Authentication» (id-kp1 با OID 1.3.6.1.5.5.7.3.1) را در بخش extendedKeyUsage خود داشته باشند.",
+          "source_row_index": 10
+        },
+        {
+          "id": "AFTA-3-5-01.s10",
+          "instruction": "",
+          "text": "گواهی‌نامه‌های کلاینت ارائه شده برای TLS باید هدف «Client Authentication» (id-kp1 با OID 1.3.6.1.5.5.7.3.2)  را در بخش extendedKeyUsage خود داشته باشند.",
+          "source_row_index": 11
+        },
+        {
+          "id": "AFTA-3-5-01.s11",
+          "instruction": "",
+          "text": "گواهی‌نامه‌های OCSP مورد استفاده برای پاسخ OCSP باید «OCSP Signing» (id-pk9 با OID 1.3.6.1.5.5.7.3.9) را در بخش extendedKeyUsage خود داشته باشند.",
+          "source_row_index": 12
+        }
+      ]
+    },
+    {
+      "id": "AFTA-3-5-02",
+      "section": "3-5",
+      "number": 2,
+      "category": "اعتبارسنجی گواهی‌نامه",
+      "text": "محصول باید تنها در صورتی که افزونه مربوط به basicConstraints از پیش تنظیم شده باشد و همچنین، پرچم CA به حالت «TRUE» تنظیم شده باشد، یک گواهی‌نامه را به عنوان گواهی‌نامه CA بپذیرد.",
+      "source": {
+        "table_index": 15,
+        "row_index": 13
+      },
+      "applies_when_any": [
+        "https",
+        "tls",
+        "tls_client",
+        "tls_server",
+        "certificate_validation"
+      ],
+      "details": []
+    },
+    {
+      "id": "AFTA-3-5-03",
+      "section": "3-5",
+      "number": 3,
+      "category": "اعتبارسنجی گواهی‌نامه",
+      "text": "محصول باید برای پشتیبانی از احراز هویت برای موارد زیر، از گواهی‌نامه‌های X509v3 تعریف‌شده در RFC 5280 استفاده کند.",
+      "source": {
+        "table_index": 15,
+        "row_index": 14
+      },
+      "applies_when_any": [
+        "https",
+        "tls",
+        "tls_client",
+        "tls_server",
+        "certificate_validation"
+      ],
+      "details": [
+        {
+          "id": "AFTA-3-5-03.s01",
+          "instruction": "در صورت پشتیبانی از کارکردهای دیگر، در «سایر موارد» بیان گردد.",
+          "text": "HTTPS",
+          "source_row_index": 15
+        },
+        {
+          "id": "AFTA-3-5-03.s02",
+          "instruction": "",
+          "text": "TLS",
+          "source_row_index": 16
+        },
+        {
+          "id": "AFTA-3-5-03.s03",
+          "instruction": "",
+          "text": "SSH",
+          "source_row_index": 17
+        },
+        {
+          "id": "AFTA-3-5-03.s04",
+          "instruction": "",
+          "text": "امضای کد برای بروزرسانی‌های نرم‌افزار سیستم",
+          "source_row_index": 18
+        },
+        {
+          "id": "AFTA-3-5-03.s05",
+          "instruction": "",
+          "text": "امضای کد برای تأیید یکپارچگی",
+          "source_row_index": 19
+        },
+        {
+          "id": "AFTA-3-5-03.s06",
+          "instruction": "",
+          "text": "سایر موارد",
+          "source_row_index": 20
+        }
+      ]
+    },
+    {
+      "id": "AFTA-3-6-01",
+      "section": "3-6",
+      "number": 1,
+      "category": "پروتکل SSH",
+      "text": "محصول باید پروتکل SSH را مطابق با RFCهای 4251، 4252، 4253، 4254، 5656 و 6668 پیاده‌سازی نماید.",
+      "source": {
+        "table_index": 16,
+        "row_index": 1
+      },
+      "applies_when_any": [
+        "ssh"
+      ],
+      "details": []
+    },
+    {
+      "id": "AFTA-3-6-02",
+      "section": "3-6",
+      "number": 2,
+      "category": "پروتکل SSH",
+      "text": "محصول باید در پیاده‌سازی پروتکل SSH مطابق RFC 4252، از روش‌های احراز هویت زیر پشتیبانی نماید.",
+      "source": {
+        "table_index": 16,
+        "row_index": 2
+      },
+      "applies_when_any": [
+        "ssh"
+      ],
+      "details": [
+        {
+          "id": "AFTA-3-6-02.s01",
+          "instruction": "",
+          "text": "احراز هویت مبتنی بر کلید عمومی",
+          "source_row_index": 3
+        },
+        {
+          "id": "AFTA-3-6-02.s02",
+          "instruction": "",
+          "text": "احراز هویت مبتنی بر گذرواژه",
+          "source_row_index": 4
+        }
+      ]
+    },
+    {
+      "id": "AFTA-3-6-03",
+      "section": "3-6",
+      "number": 3,
+      "category": "پروتکل SSH",
+      "text": "محصول باید در پیاده‌سازی پروتکل SSH مطابق RFC 4253، بسته‌های بزرگتر از مقدار مشخصی (در بخش «توضیحات» ذکر شود) را کنار بگذارد.",
+      "source": {
+        "table_index": 16,
+        "row_index": 5
+      },
+      "applies_when_any": [
+        "ssh"
+      ],
+      "details": []
+    },
+    {
+      "id": "AFTA-3-6-04",
+      "section": "3-6",
+      "number": 4,
+      "category": "پروتکل SSH",
+      "text": "محصول باید در پیاده‌سازی پروتکل SSH تنها از الگوریتم‌های رمزنگاری زیر استفاده نماید.",
+      "source": {
+        "table_index": 16,
+        "row_index": 6
+      },
+      "applies_when_any": [
+        "ssh"
+      ],
+      "details": [
+        {
+          "id": "AFTA-3-6-04.s01",
+          "instruction": "",
+          "text": "AES128-CBC",
+          "source_row_index": 7
+        },
+        {
+          "id": "AFTA-3-6-04.s02",
+          "instruction": "",
+          "text": "AES192-CBC",
+          "source_row_index": 8
+        },
+        {
+          "id": "AFTA-3-6-04.s03",
+          "instruction": "",
+          "text": "AES256-CBC",
+          "source_row_index": 9
+        },
+        {
+          "id": "AFTA-3-6-04.s04",
+          "instruction": "",
+          "text": "AES128-CTR",
+          "source_row_index": 10
+        },
+        {
+          "id": "AFTA-3-6-04.s05",
+          "instruction": "",
+          "text": "AES192-CTR",
+          "source_row_index": 11
+        },
+        {
+          "id": "AFTA-3-6-04.s06",
+          "instruction": "",
+          "text": "AES256-CTR",
+          "source_row_index": 12
+        },
+        {
+          "id": "AFTA-3-6-04.s07",
+          "instruction": "",
+          "text": "AEAD_AES_128_GCM",
+          "source_row_index": 13
+        },
+        {
+          "id": "AFTA-3-6-04.s08",
+          "instruction": "",
+          "text": "AEAD_AES_256_GCM",
+          "source_row_index": 14
+        }
+      ]
+    },
+    {
+      "id": "AFTA-3-6-05",
+      "section": "3-6",
+      "number": 5,
+      "category": "پروتکل SSH",
+      "text": "محصول باید در پیاده‌سازی پروتکل انتقال SSH تنها از الگوریتم‌های کلید عمومی زیر استفاده نماید.",
+      "source": {
+        "table_index": 16,
+        "row_index": 15
+      },
+      "applies_when_any": [
+        "ssh"
+      ],
+      "details": [
+        {
+          "id": "AFTA-3-6-05.s01",
+          "instruction": "",
+          "text": "ssh-ed25519",
+          "source_row_index": 16
+        },
+        {
+          "id": "AFTA-3-6-05.s02",
+          "instruction": "",
+          "text": "ssh-ed448",
+          "source_row_index": 17
+        },
+        {
+          "id": "AFTA-3-6-05.s03",
+          "instruction": "",
+          "text": "rsa-sha2-512",
+          "source_row_index": 18
+        },
+        {
+          "id": "AFTA-3-6-05.s04",
+          "instruction": "",
+          "text": "rsa-sha2-256",
+          "source_row_index": 19
+        },
+        {
+          "id": "AFTA-3-6-05.s05",
+          "instruction": "",
+          "text": "ecdsa-sha2-nistp521",
+          "source_row_index": 20
+        },
+        {
+          "id": "AFTA-3-6-05.s06",
+          "instruction": "",
+          "text": "ecdsa-sha2-nistp384",
+          "source_row_index": 21
+        },
+        {
+          "id": "AFTA-3-6-05.s07",
+          "instruction": "",
+          "text": "ecdsa-sha2-nistp256",
+          "source_row_index": 22
+        },
+        {
+          "id": "AFTA-3-6-05.s08",
+          "instruction": "",
+          "text": "x509v3-ecdsa-sha2-nistp521",
+          "source_row_index": 23
+        },
+        {
+          "id": "AFTA-3-6-05.s09",
+          "instruction": "",
+          "text": "x509v3-ecdsa-sha2-nistp384",
+          "source_row_index": 24
+        },
+        {
+          "id": "AFTA-3-6-05.s10",
+          "instruction": "",
+          "text": "x509v3-ecdsa-sha2-nistp256",
+          "source_row_index": 25
+        },
+        {
+          "id": "AFTA-3-6-05.s11",
+          "instruction": "",
+          "text": "x509v3-rsa2048-sha256",
+          "source_row_index": 26
+        },
+        {
+          "id": "AFTA-3-6-05.s12",
+          "instruction": "",
+          "text": "ssh-rsa",
+          "source_row_index": 27
+        },
+        {
+          "id": "AFTA-3-6-05.s13",
+          "instruction": "",
+          "text": "x509v3-ssh-rsa",
+          "source_row_index": 28
+        }
+      ]
+    },
+    {
+      "id": "AFTA-3-6-06",
+      "section": "3-6",
+      "number": 6,
+      "category": "پروتکل SSH",
+      "text": "محصول باید در پیاده‌سازی پروتکل انتقال SSH تنها از الگوریتم‌های MAC صحت داده‌های زیر استفاده نماید.",
+      "source": {
+        "table_index": 16,
+        "row_index": 29
+      },
+      "applies_when_any": [
+        "ssh"
+      ],
+      "details": [
+        {
+          "id": "AFTA-3-6-06.s01",
+          "instruction": "",
+          "text": "AEAD_AES_256_GCM",
+          "source_row_index": 30
+        },
+        {
+          "id": "AFTA-3-6-06.s02",
+          "instruction": "",
+          "text": "AEAD_AES_128_GCM",
+          "source_row_index": 31
+        },
+        {
+          "id": "AFTA-3-6-06.s03",
+          "instruction": "",
+          "text": "hmac-sha2-512",
+          "source_row_index": 32
+        },
+        {
+          "id": "AFTA-3-6-06.s04",
+          "instruction": "",
+          "text": "hmac-sha2-256",
+          "source_row_index": 33
+        },
+        {
+          "id": "AFTA-3-6-06.s05",
+          "instruction": "",
+          "text": "hmac-sha1-96",
+          "source_row_index": 34
+        },
+        {
+          "id": "AFTA-3-6-06.s06",
+          "instruction": "",
+          "text": "hmac-sha1",
+          "source_row_index": 35
+        }
+      ]
+    },
+    {
+      "id": "AFTA-3-6-07",
+      "section": "3-6",
+      "number": 7,
+      "category": "پروتکل SSH",
+      "text": "محصول باید در پیاده‌سازی پروتکل SSH تنها از الگوریتم‌های تبادل کلید زیر استفاده نماید.",
+      "source": {
+        "table_index": 16,
+        "row_index": 36
+      },
+      "applies_when_any": [
+        "ssh"
+      ],
+      "details": [
+        {
+          "id": "AFTA-3-6-07.s01",
+          "instruction": "",
+          "text": "curve25519-sha256",
+          "source_row_index": 37
+        },
+        {
+          "id": "AFTA-3-6-07.s02",
+          "instruction": "",
+          "text": "curve448-sha512",
+          "source_row_index": 38
+        },
+        {
+          "id": "AFTA-3-6-07.s03",
+          "instruction": "",
+          "text": "diffie-hellman-group-exchange-sha256",
+          "source_row_index": 39
+        },
+        {
+          "id": "AFTA-3-6-07.s04",
+          "instruction": "",
+          "text": "diffie-hellman-group18-sha512",
+          "source_row_index": 40
+        },
+        {
+          "id": "AFTA-3-6-07.s05",
+          "instruction": "",
+          "text": "diffie-hellman-group17-sha512",
+          "source_row_index": 41
+        },
+        {
+          "id": "AFTA-3-6-07.s06",
+          "instruction": "",
+          "text": "diffie-hellman-group16-sha512",
+          "source_row_index": 42
+        },
+        {
+          "id": "AFTA-3-6-07.s07",
+          "instruction": "",
+          "text": "diffie-hellman-group15-sha512",
+          "source_row_index": 43
+        },
+        {
+          "id": "AFTA-3-6-07.s08",
+          "instruction": "",
+          "text": "ecdh-sha2-nistp521",
+          "source_row_index": 44
+        },
+        {
+          "id": "AFTA-3-6-07.s09",
+          "instruction": "",
+          "text": "ecdh-sha2-nistp384",
+          "source_row_index": 45
+        },
+        {
+          "id": "AFTA-3-6-07.s10",
+          "instruction": "",
+          "text": "ecdh-sha2-nistp256",
+          "source_row_index": 46
+        },
+        {
+          "id": "AFTA-3-6-07.s11",
+          "instruction": "",
+          "text": "rsa2048-sha256",
+          "source_row_index": 47
+        },
+        {
+          "id": "AFTA-3-6-07.s12",
+          "instruction": "",
+          "text": "diffie-hellman-group-exchange-sha1",
+          "source_row_index": 48
+        },
+        {
+          "id": "AFTA-3-6-07.s13",
+          "instruction": "",
+          "text": "diffie-hellman-group14-sha256",
+          "source_row_index": 49
+        }
+      ]
+    },
+    {
+      "id": "AFTA-3-6-08",
+      "section": "3-6",
+      "number": 8,
+      "category": "پروتکل SSH",
+      "text": "محصول باید اطمینان پیدا کند که در یک ارتباط SSH، کلیدهای نشست یکسانی برای حد آستانه (طول نشست بیشتر از یک ساعت و حجم داده مبادله شده بیشتر از 1 گیگابایت نباشد) استفاده گردد. در صورت پر شدن حد آستانه برای هر کدام از موارد ذکر شده، باید تجدید کلید صورت بگیرد.",
+      "source": {
+        "table_index": 16,
+        "row_index": 50
+      },
+      "applies_when_any": [
+        "ssh"
+      ],
+      "details": []
+    },
+    {
+      "id": "AFTA-3-6-09",
+      "section": "3-6",
+      "number": 9,
+      "category": "پروتکل SSH",
+      "text": "محصول باید اطمینان حاصل نماید که کلاینت SSH، سرور SSH را احراز هویت می‌کند. سرور SSH از یک پایگاه داده محلی که نام هر میزبان را با کلید عمومی متناظر آن (تشریح‌شده در RFC 4251 بخش ۷.1) همراه می‌کند، استفاده می‌نماید.",
+      "source": {
+        "table_index": 16,
+        "row_index": 51
+      },
+      "applies_when_any": [
+        "ssh"
+      ],
+      "details": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "project": "",
+  "revision": "",
+  "environment": "",
+  "scope": "",
+  "features": {
+    "https": null,
+    "tls": null,
+    "tls_client": null,
+    "tls_server": null,
+    "ssh": null,
+    "certificate_validation": null,
+    "key_generation": null,
+    "digital_signatures": null,
+    "external_security_products": null,
+    "automatic_updates": null
+  },
+  "feature_evidence": {},
+  "architecture": {
+    "components": [],
+    "trust_boundaries": [],
+    "tls_termination": "",
+    "identity_provider": "",
+    "deployment_owner": ""
+  },
+  "notes": []
+}

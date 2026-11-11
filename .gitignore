@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.afta-stage.*/
+.afta-security-backups/
+/afta-report*.json
+/afta-report*.md
+/project-profile.json
