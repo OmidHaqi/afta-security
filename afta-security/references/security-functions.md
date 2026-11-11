@@ -1,12 +1,12 @@
-# 2-6 رده حفاظت از توابع امنیتی محصول
+# 2-6 Protection of product security functions
 
-متن استخراج‌شده از نسخهٔ ۱٫۹ ارسالی؛ گزینه‌ها بدون انتخاب و بدون پاسخ‌های محصول قبلی هستند. متن منبع الزام است؛ روش بررسی در workflow.md پیشنهاد اجرایی این بسته است.
+Original Persian text extracted from the supplied v1.9 document. Options are unselected and previous product answers are excluded. Source text defines the requirement; assessment guidance in workflow.md is supplied by this package.
 
 ## AFTA-2-6-01
 
 محصول باید هنگام رخ دادن هرگونه خرابی، اشکال یا شکست مانند از کار افتادن محصول، قطع شدن ارتباط محصول با پایگاه داده و یا اختلال در کارکردهای محصول، در وضعیت امنی قرار گرفته، صحت داده‌ها و خط‌مشی کنترل دسترسی را حفظ نماید.
 
-نشانی منبع: جدول 7، ردیف 1 (شماره‌گذاری از صفر در XML سند).
+Source: table 7, row 1 (zero-based indices in the Word document XML).
 
 ### AFTA-2-6-01.s01
 
@@ -22,15 +22,15 @@
 
 محصول باید از طریق فراهم نمودن بستر و زیرساخت امن، توانایی جلوگیری از افشاء یا تغییر داده، هنگام انتقال بین بخش‌های مجزای خود را داشته باشد.
 
-نشانی منبع: جدول 7، ردیف 4 (شماره‌گذاری از صفر در XML سند).
+Source: table 7, row 4 (zero-based indices in the Word document XML).
 
 ## AFTA-2-6-03
 
 در صورتی که محصول از محصولات امن IT دیگری استفاده می‌کند، باید تفسیر سازگار و یکسانی را از داده امنیتی در زمان اشتراک‌گذاری آن بین خود و دیگر محصولات امن IT، فراهم آورد.
 
-نشانی منبع: جدول 7، ردیف 5 (شماره‌گذاری از صفر در XML سند).
+Source: table 7, row 5 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از external_security_products؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of external_security_products. Unknown conditions do not establish non-applicability.
 
 ### AFTA-2-6-03.s01
 
@@ -58,7 +58,7 @@
 
 محصول باید زمان و تاریخ معتبری داشته باشد، بنابراین باید مهرهای زمانی معتبر را تولید یا از آن‌ها استفاده نماید.
 
-نشانی منبع: جدول 7، ردیف 11 (شماره‌گذاری از صفر در XML سند).
+Source: table 7, row 11 (zero-based indices in the Word document XML).
 
 ### AFTA-2-6-04.s01
 
@@ -82,7 +82,7 @@
 
 محصول باید امکان بروزرسانی نرم‌افزار و میان‌افزار محصول را برای مدیر سیستم فراهم نماید.
 
-نشانی منبع: جدول 7، ردیف 16 (شماره‌گذاری از صفر در XML سند).
+Source: table 7, row 16 (zero-based indices in the Word document XML).
 
 ### AFTA-2-6-05.s01
 
@@ -106,9 +106,9 @@
 
 در صورت استفاده از بروزرسانی به روش خودکار، محصول باید پیش از نصب بروزرسانی‌های نرم‌افزاری و میان‌افزاری، امکان احراز اصالت میان‌افزار یا نرم‌افزار را فراهم نماید.
 
-نشانی منبع: جدول 7، ردیف 21 (شماره‌گذاری از صفر در XML سند).
+Source: table 7, row 21 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از automatic_updates؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of automatic_updates. Unknown conditions do not establish non-applicability.
 
 ### AFTA-2-6-06.s01
 

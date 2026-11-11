@@ -1,30 +1,30 @@
-# 2-8 رده دسترسی به محصول
+# 2-8 Product access and sessions
 
-متن استخراج‌شده از نسخهٔ ۱٫۹ ارسالی؛ گزینه‌ها بدون انتخاب و بدون پاسخ‌های محصول قبلی هستند. متن منبع الزام است؛ روش بررسی در workflow.md پیشنهاد اجرایی این بسته است.
+Original Persian text extracted from the supplied v1.9 document. Options are unselected and previous product answers are excluded. Source text defines the requirement; assessment guidance in workflow.md is supplied by this package.
 
 ## AFTA-2-8-01
 
 محصول باید حداکثر تعداد نشست‌های همزمان متعلق به یک کاربر را محدود نماید.
 
-نشانی منبع: جدول 9، ردیف 1 (شماره‌گذاری از صفر در XML سند).
+Source: table 9, row 1 (zero-based indices in the Word document XML).
 
 ## AFTA-2-8-02
 
 محصول باید کلیه نشست‌های تعاملی راه‌دور را پس از مدت زمانی که غیرفعال هستند (و می‌بایست توسط مدیر قابل تنظیم باشد)، خاتمه دهد.
 
-نشانی منبع: جدول 9، ردیف 2 (شماره‌گذاری از صفر در XML سند).
+Source: table 9, row 2 (zero-based indices in the Word document XML).
 
 ## AFTA-2-8-03
 
 محصول باید به کاربری که خود آغازگر نشست بوده است اجازه‌ی خاتمه نشست را بدهد.
 
-نشانی منبع: جدول 9، ردیف 3 (شماره‌گذاری از صفر در XML سند).
+Source: table 9, row 3 (zero-based indices in the Word document XML).
 
 ## AFTA-2-8-04
 
 در صورت برقراری نشست به طور موفقیت‌آمیز، محصول باید قادر به نمایش آخرین تلاش موفق برای ایجاد نشست بر اساس موارد زیر باشد.
 
-نشانی منبع: جدول 9، ردیف 4 (شماره‌گذاری از صفر در XML سند).
+Source: table 9, row 4 (zero-based indices in the Word document XML).
 
 ### AFTA-2-8-04.s01
 
@@ -44,7 +44,7 @@
 
 در صورت برقراری نشست به طور موفقیت آمیز، محصول باید قادر به نمایش آخرین تلاش ناموفق برای ایجاد نشست بر اساس موارد زیر و تعداد تلاش‌های ناموفق تا آخرین ایجاد نشست موفقیت‌آمیز باشد.
 
-نشانی منبع: جدول 9، ردیف 8 (شماره‌گذاری از صفر در XML سند).
+Source: table 9, row 8 (zero-based indices in the Word document XML).
 
 ### AFTA-2-8-05.s01
 
@@ -64,13 +64,13 @@
 
 محصول نباید اطلاعات سوابق دسترسی را بدون بازدید کاربر، از واسط کاربری پاک نماید.
 
-نشانی منبع: جدول 9، ردیف 12 (شماره‌گذاری از صفر در XML سند).
+Source: table 9, row 12 (zero-based indices in the Word document XML).
 
 ## AFTA-2-8-07
 
 محصول باید توانایی ممانعت از ایجاد نشست بر اساس پارامترهایی را داشته باشد.
 
-نشانی منبع: جدول 9، ردیف 13 (شماره‌گذاری از صفر در XML سند).
+Source: table 9, row 13 (zero-based indices in the Word document XML).
 
 ### AFTA-2-8-07.s01
 

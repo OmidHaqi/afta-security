@@ -1,4 +1,4 @@
 interface:
-  display_name: "بررسی امنیت افتا"
-  short_description: "توسعه و بررسی پروژه بر اساس الزامات افتا نسخه ۱٫۹"
-  default_prompt: "با $afta-security پروژه را بر اساس چک‌لیست افتا بررسی کن و برای هر الزام شواهد، شکاف‌ها و اقدام پیشنهادی را گزارش بده."
+  display_name: "AFTA Security Review"
+  short_description: "Develop and review projects against AFTA v1.9"
+  default_prompt: "Use $afta-security to review this project against the AFTA checklist and report evidence, gaps, and recommended actions for each requirement."

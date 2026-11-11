@@ -1,14 +1,14 @@
-# 3-5 اعتبارسنجی گواهی‌نامه
+# 3-5 Certificate validation
 
-متن استخراج‌شده از نسخهٔ ۱٫۹ ارسالی؛ گزینه‌ها بدون انتخاب و بدون پاسخ‌های محصول قبلی هستند. متن منبع الزام است؛ روش بررسی در workflow.md پیشنهاد اجرایی این بسته است.
+Original Persian text extracted from the supplied v1.9 document. Options are unselected and previous product answers are excluded. Source text defines the requirement; assessment guidance in workflow.md is supplied by this package.
 
 ## AFTA-3-5-01
 
 محصول باید گواهی‌نامه‌ها را بر اساس قوانین زیر تأیید کند.
 
-نشانی منبع: جدول 15، ردیف 1 (شماره‌گذاری از صفر در XML سند).
+Source: table 15, row 1 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از https, tls, tls_client, tls_server, certificate_validation؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of https, tls, tls_client, tls_server, certificate_validation. Unknown conditions do not establish non-applicability.
 
 ### AFTA-3-5-01.s01
 
@@ -62,17 +62,17 @@
 
 محصول باید تنها در صورتی که افزونه مربوط به basicConstraints از پیش تنظیم شده باشد و همچنین، پرچم CA به حالت «TRUE» تنظیم شده باشد، یک گواهی‌نامه را به عنوان گواهی‌نامه CA بپذیرد.
 
-نشانی منبع: جدول 15، ردیف 13 (شماره‌گذاری از صفر در XML سند).
+Source: table 15, row 13 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از https, tls, tls_client, tls_server, certificate_validation؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of https, tls, tls_client, tls_server, certificate_validation. Unknown conditions do not establish non-applicability.
 
 ## AFTA-3-5-03
 
 محصول باید برای پشتیبانی از احراز هویت برای موارد زیر، از گواهی‌نامه‌های X509v3 تعریف‌شده در RFC 5280 استفاده کند.
 
-نشانی منبع: جدول 15، ردیف 14 (شماره‌گذاری از صفر در XML سند).
+Source: table 15, row 14 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از https, tls, tls_client, tls_server, certificate_validation؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of https, tls, tls_client, tls_server, certificate_validation. Unknown conditions do not establish non-applicability.
 
 ### AFTA-3-5-03.s01
 

@@ -1,64 +1,72 @@
-# روش اجرای بررسی
+# Assessment workflow
 
-## دامنه و کاربرد
+## Scope and applicability
 
-مشخصات فنی، معماری، مرز محصول و مسئولیت زیرساخت را از پروژه استخراج کن. TLS ممکن است در reverse proxy پایان یابد؛ نبود تنظیم TLS در برنامه به تنهایی شکست یا موفقیت کنترل نیست. وجود IdP یا مدیریت حافظهٔ یک چارچوب نیز به تنهایی شاهد رعایت همهٔ الزامات مربوط نیست.
+Identify the project's technical stack, architecture, product boundary, and infrastructure responsibilities. TLS may terminate at a reverse proxy; the absence of TLS configuration in application code alone proves neither failure nor satisfaction. An identity provider or framework-managed memory is not sufficient evidence for every related requirement.
 
-از assets/project-profile.json برای ثبت نسخهٔ پروژه، محیط و قابلیت‌ها استفاده کن. مقدار ویژگی‌ها فقط true، false یا null است. true/false باید پشتوانهٔ مشخص در `feature_evidence` داشته باشند؛ null یعنی نامعلوم. هر ویژگی شاهددار به شکل زیر ثبت شود:
+Use `assets/project-profile.json` to record the revision, environment, and features. Feature values must be `true`, `false`, or `null`. Every true/false value needs supporting `feature_evidence`; null means unknown. Example profile fragment:
 
 ```json
-"feature_evidence": {
-  "https": [{"kind": "configuration", "reference": "deploy/proxy.conf:24", "observation": "TLS در درگاه ورودی پیکربندی شده؛ اجرای محیط هنوز بررسی نشده"}]
+{
+  "feature_evidence": {
+    "https": [
+      {
+        "kind": "configuration",
+        "reference": "deploy/proxy.conf:24",
+        "observation": "TLS is configured at ingress; deployed behavior has not yet been verified."
+      }
+    ]
+  }
 }
 ```
 
-ویژگی‌ها نشان‌دهندهٔ **دامنه و انتخاب موردنیاز پروژه** هستند، نه صرفاً اینکه امروز پیاده‌سازی وجود دارد. خاموش بودن کنترل موردنیاز، دلیل false کردن آن نیست. هر جزء یا مسیر ارتباطی متفاوت را جداگانه بررسی کن؛ پرچم‌های ساده جای معماری را نمی‌گیرند.
+Features describe the **project's required scope and selections**, not merely what is implemented today. A required control being disabled is not a reason to mark its feature false. Assess distinct components and communication paths separately; simple flags do not replace architecture analysis.
 
-- پایه: تمام الزامات بخش ۲ در دامنه‌اند، جز شرط‌های صریح تولید کلید/امضای دیجیتال در ۲-۲ و محصول امنیتی خارجی/به‌روزرسانی خودکار در ۲-۶. «اختیاری» و شرط‌های درون متن هم باید بررسی شوند.
-- HTTPS: بخش‌های ۳-۱ و ۳-۳ طبق ارجاع منبع فعال می‌شوند؛ اعتبارسنجی گواهی‌نامه در ۳-۵ نیز باید در مسیرهای مربوط بررسی شود. شرط مربوط به ارتباط با محصول دیگر را در ۳-۱-۳ جدا تعیین کن.
-- TLS: طبق ۲-۹-۱ بخش‌های ۳-۲، ۳-۳ و ۳-۴ لازم می‌شوند؛ نقش‌ها و دامنهٔ ارتباط را ثبت کن.
-- نقش مستقل TLS Client یا Server: ردهٔ همان نقش و اعتبارسنجی گواهی‌نامه را بررسی کن؛ اگر انتخاب کلی TLS مطرح است، اثر آن بر همهٔ بخش‌های ۳-۲ تا ۳-۴ را دور نزن.
-- SSH: بخش ۳-۶ در صورت استفاده در دامنهٔ محصول بررسی شود. وجود SSH مدیریتی روی میزبان الزاماً به معنی قابلیت SSH خود محصول نیست؛ مرز مسئولیت را روشن کن.
-- تولید کلید، امضای دیجیتال، تعامل با محصول امنیتی خارجی و به‌روزرسانی خودکار: شرط‌های داخل بندهای ۲-۲-۳، ۲-۲-۴، ۲-۶-۳ و ۲-۶-۶ را فعال می‌کنند.
+- **Base requirements:** Section 2 is in scope, except explicit conditions for key generation/digital signatures in 2-2 and external security products/automatic updates in 2-6. Also assess optional language and conditions within individual requirements.
+- **HTTPS:** The source references sections 3-1 and 3-3. Assess certificate validation in 3-5 for the relevant paths. Determine the external-product communication condition in AFTA-3-1-03 separately.
+- **TLS:** AFTA-2-9-01 references sections 3-2, 3-3, and 3-4. Record the roles and communication scope.
+- **Independent TLS client/server role:** Assess the corresponding category and certificate validation. If the overall TLS selection applies, do not bypass its implications for sections 3-2 through 3-4.
+- **SSH:** Assess section 3-6 when SSH is part of the product scope. Administrative SSH on a host does not necessarily make SSH a product capability; establish the responsibility boundary.
+- **Key generation, digital signatures, external security products, and automatic updates:** These activate the conditions in AFTA-2-2-03, AFTA-2-2-04, AFTA-2-6-03, and AFTA-2-6-06 respectively.
 
-اگر یکی از شرط‌های «یا» برقرار باشد، رده مرتبط است. اگر هیچ‌کدام برقرار نباشد ولی یکی نامعلوم باشد، کاربرد نامعلوم است. تنها وقتی همهٔ شرط‌های آن گروه با شاهد رد شده‌اند، می‌توان `not_applicable` داد. شرط‌ها در helper یک غربال اولیه‌اند؛ شرایط درون زیرموارد و تفسیرهای مستند باید دستی بررسی شوند. در صورت وجود ابهام خارج از این پرچم‌ها `needs_review` بده.
+For an OR group, one true condition makes the requirement applicable. If none is true and at least one is unknown, applicability remains unknown. Use `not_applicable` only when every condition in the group is false with supporting evidence. Helper conditions are an initial filter; assess conditions within details and documented interpretations manually. Use `needs_review` for unresolved applicability or interpretations outside these flags.
 
-## شواهد و وضعیت
+## Evidence and status
 
-برای هر بند یکی از وضعیت‌های زیر را ثبت کن:
+Assign one status per main requirement:
 
-| مقدار | معنی | حداقل مستندات |
+| Value | Meaning | Minimum documentation |
 |---|---|---|
-| satisfied | رعایت در دامنهٔ بررسی با شاهد کافی | شاهد، توضیح پوشش زیرموارد و تصمیم گزینه‌ها، نتیجهٔ بررسی متناسب با نوع کنترل |
-| not_satisfied | شکاف مشخص یا آزمون ناموفق | شاهد شکاف، اثر و اقدام اصلاحی |
-| needs_review | اطلاعات، آزمون یا تفسیر کافی نیست | دلیل و کار بعدی؛ نبود شاهد را موفقیت حساب نکن |
-| not_applicable | شرط کاربرد برقرار نیست | دلیل مشخص و شاهد عدم کاربرد |
+| `satisfied` | Sufficient evidence of satisfaction within the assessed scope | Evidence, detail coverage and selection decisions, and verification appropriate to the control |
+| `not_satisfied` | An observed gap or failed test | Gap evidence, impact, and corrective action |
+| `needs_review` | Insufficient information, testing, or interpretation | Reason and next action; missing evidence does not count as success |
+| `not_applicable` | Applicability conditions do not hold | A specific rationale and evidence of non-applicability |
 
-برای هر شاهد نوع (`code`، `configuration`، `test`، `runtime`، `document` یا `process`)، نشانی و مشاهده را ثبت کن. شناسهٔ commit و محیط را همراه گزارش نگه دار. کد: فایل و خط یا نماد. آزمون: روش اجرا و نتیجه. محیط: شناسهٔ تنظیم/خروجی و زمان برداشت. ادعای توسعه‌دهنده را به عنوان ادعا با وضعیت نیازمند بررسی ثبت کن، نه نتیجهٔ آزمون. اطلاعات حساس و محتوای کلید/گذرواژه را وارد گزارش نکن.
+For each evidence item, record its kind (`code`, `configuration`, `test`, `runtime`, `document`, or `process`), reference, and observation. Keep the commit and environment with the report. Code evidence should identify a file and line or symbol. Test evidence should include the method and result. Runtime evidence should identify the configuration/output and collection time. Treat developer statements as claims needing review, not test results. Do not include secrets or key/password contents in reports.
 
-در گزارش JSON هر بند، `detail_decisions` باید برای تک‌تک شناسه‌های تفصیلی یک توضیح داشته باشد: اجباری/انتخاب‌شده/انتخاب‌نشده/نامرتبط و دلیل. برای گزینه‌های جایگزین همه را الزامی نکن. انتخاب‌نشدن یک گزینهٔ جایگزین برابر شکست نیست. برای زیرالزام‌های اجباری، عدم رعایت را با گزینهٔ جایگزین اشتباه نگیر. اگر بخشی از کنترل رعایت نشده، وضعیت کل بند موفق نیست؛ جزئیات رعایت جزئی را در توضیح بنویس.
+In each JSON requirement row, `detail_decisions` must explain every detail ID: mandatory, selected, not selected, or not applicable, with a reason. Alternative options are not all mandatory. Not choosing an alternative does not mean failure; distinguish alternatives from mandatory subrequirements. If part of a required control is not satisfied, do not mark the whole requirement satisfied. Explain partial coverage in the rationale.
 
-`verification` یکی از `not_run`، `static`، `tested` یا `mixed` و فیلد `verification_notes` روش و محدودیت بررسی است. `static` تنها زمانی برای satisfied کافی است که خود ادعا کاملاً از شواهد ایستا قابل اثبات باشد. برای عملکردهایی مانند قطع نشست، شکست ذخیرهٔ لاگ، رد گواهی نامعتبر، احراز هویت، کنترل دسترسی و بازیابی پس از شکست، آزمون رفتاری یا شاهد اجرای مرتبط لازم است؛ نبود محیط را needs_review ثبت کن. اجرای آزمون مخرب روی محیط زنده را از درخواست بازبینی استنباط نکن.
+`verification` must be `not_run`, `static`, `tested`, or `mixed`. Use `verification_notes` to describe the method and limits. Static evidence can support `satisfied` only when the claim is fully demonstrable from that evidence. Behavior such as session termination, log storage failure, invalid-certificate rejection, authentication, access control, and failure recovery requires behavioral tests or relevant execution evidence. If the necessary environment is unavailable, use `needs_review`. A review request does not imply permission to perform destructive testing on a live environment.
 
-## راهنمای بررسی رده‌ها
+## Category review guidance
 
-این روش‌های پیشنهادی بسته‌اند و متن رسمی الزام نیستند:
+The following are suggested assessment methods supplied by this package, not official requirement text:
 
-| رده | شواهد مفید |
+| Category | Useful evidence |
 |---|---|
-| ممیزی | مسیر تولید رویداد، محتوای پاک‌سازی‌شدهٔ لاگ، ACL، تمامیت، آستانه، رفتار شکست نوشتن و پرشدن ذخیره‌ساز |
-| رمزنگاری | کتابخانه و تنظیم الگوریتم، چرخهٔ کلید، نحوهٔ تولید/نگهداری/نابودی؛ بدون نمایش کلیدها |
-| احراز هویت | تمام مسیرهای ورود و بازیابی، محدودسازی تلاش، سیاست گذرواژه، چند سازوکار، ابطال نشست و تغییر ویژگی امنیتی |
-| دادهٔ کاربری | مجوز سمت سرور، مرز مالکیت داده، ورود/خروج داده، دادهٔ باقیمانده، تمامیت و واکنش به خطا |
-| مدیریت امنیت | ماتریس نقش/عملیات، محدودسازی عملیات مدیریت، پیش‌فرض‌ها و تنظیمات مدیریتی |
-| توابع امنیتی | حالت امن در شکست، ارتباط اجزا، زمان معتبر، تحویل و احراز اصالت به‌روزرسانی |
-| منابع | آزمون شکست مرتبط با کارکردهای اصلی در محیط مجاز و رفتار مستند سرویس |
-| نشست | نشست همزمان، timeout، logout و ابطال واقعی سمت سرور، تاریخچهٔ ورود و شروط آغاز نشست |
-| کانال امن | همهٔ ورودی‌ها و خروجی‌ها، TLS termination و مسیرهای بین اجزا؛ سپس الزامات شرطی |
-| HTTPS/TLS/SSH/گواهی | تنظیم واقعی endpoint، نسخه/مجموعه‌رمز، اعتبارسنجی زنجیره و هویت، سناریوی رد و سیاست خطا |
+| Audit | Event generation paths, redacted logs, ACLs, integrity, thresholds, write-failure and storage-full behavior |
+| Cryptography | Libraries, algorithm settings, key lifecycle, generation/storage/destruction, without revealing keys |
+| Identification and authentication | All login and recovery paths, failed-attempt limits, password policies, multiple mechanisms, session invalidation, security attribute changes |
+| User data protection | Server-side authorization, data ownership boundaries, import/export, residual data, integrity and error response |
+| Security management | Role/operation matrix, restricted administrative operations, defaults, and management settings |
+| Security function protection | Secure failure state, component communication, trusted time, update delivery and authenticity |
+| Resource allocation | Authorized failure tests for core functions and documented service behavior |
+| Product access and sessions | Concurrent sessions, timeout, logout and actual server-side invalidation, access history and session initiation conditions |
+| Trusted channels | All ingress/egress, TLS termination, and component paths, followed by conditional protocol requirements |
+| HTTPS/TLS/SSH/certificates | Actual endpoint configuration, versions/cipher suites, chain and identity validation, rejection scenarios and error policy |
 
-## نتیجه و اولویت
+## Results and priorities
 
-در بررسی کامل، تعداد تمام ۷۹ بند و تفکیک چهار وضعیت را گزارش کن. بندهای نامعلوم در مخرج پوشش باقی می‌مانند؛ بدون توضیح از درصد حذف نشوند. از درصد مبهم «امنیت» پرهیز کن. در بررسی محدود، شناسه‌های پوشش‌داده‌شده و پوشش‌داده‌نشده را مشخص کن.
+For a full assessment, account for all 79 requirements and report counts for all four statuses. Unknown requirements remain in the coverage denominator; do not silently exclude them from percentages. Avoid vague security percentages. For a limited assessment, identify covered and uncovered IDs.
 
-اولویت اقدام را از اثر واقعی و قابلیت سوءاستفاده تعیین کن، نه صرف شمارهٔ بند. مسئول و موعد را اگر داده نشده‌اند «تعیین نشده» بگذار. اصلاح‌ها را به شناسهٔ بند، معیار پذیرش و روش آزمون وصل کن. گزارشِ قبل از اصلاح را حفظ کن و فقط بر اساس شواهد جدید وضعیت را تغییر بده.
+Prioritize actions by actual impact and exploitability, not requirement number. If an owner or due date was not supplied, mark it as unassigned. Connect corrections to requirement IDs, acceptance criteria, and verification methods. Preserve the pre-remediation report and change statuses only when supported by new evidence.

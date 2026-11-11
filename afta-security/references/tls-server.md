@@ -1,14 +1,14 @@
-# 3-3 پروتکل TLS Server
+# 3-3 TLS server
 
-متن استخراج‌شده از نسخهٔ ۱٫۹ ارسالی؛ گزینه‌ها بدون انتخاب و بدون پاسخ‌های محصول قبلی هستند. متن منبع الزام است؛ روش بررسی در workflow.md پیشنهاد اجرایی این بسته است.
+Original Persian text extracted from the supplied v1.9 document. Options are unselected and previous product answers are excluded. Source text defines the requirement; assessment guidance in workflow.md is supplied by this package.
 
 ## AFTA-3-3-01
 
 محصول باید TLS 1.2 (RFC 5246) را پیاده‌سازی کند. همچنین محصول باید TLS را با پشتیبانی از مجموعه‌های رمز زیر پیاده‌سازی نماید.
 
-نشانی منبع: جدول 13، ردیف 1 (شماره‌گذاری از صفر در XML سند).
+Source: table 13, row 1 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از https, tls, tls_server؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of https, tls, tls_server. Unknown conditions do not establish non-applicability.
 
 ### AFTA-3-3-01.s01
 
@@ -112,17 +112,17 @@ TLS_DH_RSA_WITH_AES_128_GCM_SHA256
 
 محصول باید اتصال‌های کاربرانی که درخواست SSL1.0، SSL2.0، SSL3.0، TLS1.0 و TLS1.1 دارند را رد نماید.
 
-نشانی منبع: جدول 13، ردیف 18 (شماره‌گذاری از صفر در XML سند).
+Source: table 13, row 18 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از https, tls, tls_server؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of https, tls, tls_server. Unknown conditions do not establish non-applicability.
 
 ## AFTA-3-3-03
 
 محصول باید پارامترهای ساخت کلید را بر اساس موارد زیر ایجاد نماید.
 
-نشانی منبع: جدول 13، ردیف 19 (شماره‌گذاری از صفر در XML سند).
+Source: table 13, row 19 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از https, tls, tls_server؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of https, tls, tls_server. Unknown conditions do not establish non-applicability.
 
 ### AFTA-3-3-03.s01
 

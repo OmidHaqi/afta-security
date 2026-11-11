@@ -1,31 +1,31 @@
-# 3-1 پروتکل HTTPS
+# 3-1 HTTPS
 
-متن استخراج‌شده از نسخهٔ ۱٫۹ ارسالی؛ گزینه‌ها بدون انتخاب و بدون پاسخ‌های محصول قبلی هستند. متن منبع الزام است؛ روش بررسی در workflow.md پیشنهاد اجرایی این بسته است.
+Original Persian text extracted from the supplied v1.9 document. Options are unselected and previous product answers are excluded. Source text defines the requirement; assessment guidance in workflow.md is supplied by this package.
 
 ## AFTA-3-1-01
 
 محصول باید پروتکل HTTPS را مطابق با RFC 2818 اجرا کند.
 
-نشانی منبع: جدول 11، ردیف 1 (شماره‌گذاری از صفر در XML سند).
+Source: table 11, row 1 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از https؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of https. Unknown conditions do not establish non-applicability.
 
 ## AFTA-3-1-02
 
 محصول باید پروتکل HTTPS را با استفاده از TLS اجرا کند.
 
-نشانی منبع: جدول 11، ردیف 2 (شماره‌گذاری از صفر در XML سند).
+Source: table 11, row 2 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از https؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of https. Unknown conditions do not establish non-applicability.
 
 ## AFTA-3-1-03
 
 در صورتی که گواهی‌نامه ارائه شده از سمت دیگر محصولات IT (درهنگام برقراری ارتباط) نامعتبر باشد، محصول باید بر اساس موارد زیر عمل نماید.
 اعتبارسنجی گواهی‌نامه بر اساس الزامات بخش ‏3-5- انجام می‌شود که در این صورت الزامات بخش ‏3-5- الزامی است.
 
-نشانی منبع: جدول 11، ردیف 3 (شماره‌گذاری از صفر در XML سند).
+Source: table 11, row 3 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از https؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of https. Unknown conditions do not establish non-applicability.
 
 ### AFTA-3-1-03.s01
 

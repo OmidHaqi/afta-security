@@ -22,6 +22,8 @@ This portable Agent Skill works in Claude Code, GitHub Copilot, Cursor and Codex
 
 ## Assess and implement
 
+Documentation and explanatory labels are in English; source requirement text and options remain in Persian for traceability. The optional helper currently renders Persian report text. For an English report, use the English report template and write in English when requested.
+
 Use exact requirement IDs and subitem IDs in findings and acceptance criteria. Options are not all mandatory: preserve “one is sufficient,” optional language, exceptions and conditional subclauses. Record the chosen options and why. Follow relevant local project instructions and use available code exploration tools; this skill has no required MCP dependency.
 
 Inspect code, configuration and meaningful tests together. Runtime, infrastructure and process requirements need appropriate evidence; source inspection alone cannot establish deployed compliance. For status and evidence rules, use [workflow.md](references/workflow.md).

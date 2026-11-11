@@ -1,12 +1,12 @@
-# 2-5 رده مدیریت امنیت
+# 2-5 Security management
 
-متن استخراج‌شده از نسخهٔ ۱٫۹ ارسالی؛ گزینه‌ها بدون انتخاب و بدون پاسخ‌های محصول قبلی هستند. متن منبع الزام است؛ روش بررسی در workflow.md پیشنهاد اجرایی این بسته است.
+Original Persian text extracted from the supplied v1.9 document. Options are unselected and previous product answers are excluded. Source text defines the requirement; assessment guidance in workflow.md is supplied by this package.
 
 ## AFTA-2-5-01
 
 محصول باید برای مدیر سیستم و هر کاربری که مجوز لازم را دارد، امکان فعالیت‌های مدیریتی زیر را بر روی توابع و تمام کارکردهای مربوط به مدیریت محصول فراهم آورد.
 
-نشانی منبع: جدول 6، ردیف 1 (شماره‌گذاری از صفر در XML سند).
+Source: table 6, row 1 (zero-based indices in the Word document XML).
 
 ### AFTA-2-5-01.s01
 
@@ -30,7 +30,7 @@
 
 محصول باید با اعمال خط‌مشی کنترل دسترسی، امکان تغییر پیش‌فرض و عملیات زیر را بر روی ویژگی‌های امنیتی الزام 7 از رده (Class) شناسایی و احراز هویت، به مدیر سیستم و هر کاربری که مجوز لازم را دارد، محدود نماید.
 
-نشانی منبع: جدول 6، ردیف 6 (شماره‌گذاری از صفر در XML سند).
+Source: table 6, row 6 (zero-based indices in the Word document XML).
 
 ### AFTA-2-5-02.s01
 
@@ -58,7 +58,7 @@
 
 محصول باید برای داده‌های محصول، امکان کارکردهای زیر را به مدیر سیستم و هر کاربری که مجوز لازم را دارد، محدود نماید.
 
-نشانی منبع: جدول 6، ردیف 12 (شماره‌گذاری از صفر در XML سند).
+Source: table 6, row 12 (zero-based indices in the Word document XML).
 
 ### AFTA-2-5-03.s01
 
@@ -94,7 +94,7 @@
 
 محصول باید توانایی انجام کارکردهای زیر را داشته باشد.
 
-نشانی منبع: جدول 6، ردیف 20 (شماره‌گذاری از صفر در XML سند).
+Source: table 6, row 20 (zero-based indices in the Word document XML).
 
 ### AFTA-2-5-04.s01
 
@@ -178,7 +178,7 @@
 
 محصول باید توانایی تعریف نقش‌های مختلف را داشته باشد.
 
-نشانی منبع: جدول 6، ردیف 39 (شماره‌گذاری از صفر در XML سند).
+Source: table 6, row 39 (zero-based indices in the Word document XML).
 
 ### AFTA-2-5-05.s01
 
@@ -202,4 +202,4 @@
 
 محصول باید قادر باشد کاربران را به نقش‌های تعریف‌شده یا قابل تعریف مرتبط نماید، همچنین لازم است هر حساب کاربری تنها به یک نقش مرتبط شده باشد، اما ممکن است نقش‌ها تنها به یک کاربر محدود نشوند و چندین کاربر نقش مشابهی داشته باشند.
 
-نشانی منبع: جدول 6، ردیف 44 (شماره‌گذاری از صفر در XML سند).
+Source: table 6, row 44 (zero-based indices in the Word document XML).

@@ -1,9 +1,9 @@
-# 2-7 رده تخصیص منابع
+# 2-7 Resource allocation
 
-متن استخراج‌شده از نسخهٔ ۱٫۹ ارسالی؛ گزینه‌ها بدون انتخاب و بدون پاسخ‌های محصول قبلی هستند. متن منبع الزام است؛ روش بررسی در workflow.md پیشنهاد اجرایی این بسته است.
+Original Persian text extracted from the supplied v1.9 document. Options are unselected and previous product answers are excluded. Source text defines the requirement; assessment guidance in workflow.md is supplied by this package.
 
 ## AFTA-2-7-01
 
 محصول باید در زمان رخداد هرگونه اشکال و خرابی (شکست) نرم‌افزاری، از عملکرد کارکردهای اصلی محصول اطمینان حاصل نماید.
 
-نشانی منبع: جدول 8، ردیف 1 (شماره‌گذاری از صفر در XML سند).
+Source: table 8, row 1 (zero-based indices in the Word document XML).

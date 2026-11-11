@@ -1,19 +1,19 @@
-# 3-4 پروتکل TLS مشترک کلاینت و سرور
+# 3-4 Common TLS client/server requirements
 
-متن استخراج‌شده از نسخهٔ ۱٫۹ ارسالی؛ گزینه‌ها بدون انتخاب و بدون پاسخ‌های محصول قبلی هستند. متن منبع الزام است؛ روش بررسی در workflow.md پیشنهاد اجرایی این بسته است.
+Original Persian text extracted from the supplied v1.9 document. Options are unselected and previous product answers are excluded. Source text defines the requirement; assessment guidance in workflow.md is supplied by this package.
 
 ## AFTA-3-4-01
 
 محصول باید احراز هویت دوطرفه کلاینت‌ها/سرورهای TLS را با استفاده از گواهی‌نامه‌های X509v3 پشتیبانی نماید.
 
-نشانی منبع: جدول 14، ردیف 1 (شماره‌گذاری از صفر در XML سند).
+Source: table 14, row 1 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از tls؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of tls. Unknown conditions do not establish non-applicability.
 
 ## AFTA-3-4-02
 
 در صورت مطابقت نداشتن نام متمایز یا نام دیگر فاعل موجود در گواهی‌نامه، با آنچه از شناساننده کلاینت مورد انتظار بوده است، محصول نباید کانال امن را برقرار سازد.
 
-نشانی منبع: جدول 14، ردیف 2 (شماره‌گذاری از صفر در XML سند).
+Source: table 14, row 2 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از tls؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of tls. Unknown conditions do not establish non-applicability.

@@ -1,24 +1,26 @@
-# منشأ و محدودیت‌های نسخهٔ پایه
+# Baseline provenance and limitations
 
-نسخهٔ بسته: 1.1.0. نسخهٔ سند ورودی: 1.9. عنوان: «سند الزامات امنیتی برنامه‌های کاربردی تحت شبکه». سند می‌گوید الزامات بر پایهٔ نسخهٔ 1.1 نمایهٔ حفاظتی برنامه‌های کاربردی تحت شبکه تهیه شده‌اند. این بسته بر اساس فایل ارسالی کاربر ساخته شده؛ اصالت، اعتبار جاری و آخرین‌بودن نسخه مستقلاً تأیید نشده است. مرجع تطبیق این بسته همان نسخهٔ ارسالی است.
+Package version: 1.1.0. Supplied document version: 1.9. The original Persian title is «سند الزامات امنیتی برنامه‌های کاربردی تحت شبکه» (Security Requirements for Network Applications). The document states that it is based on version 1.1 of the network application protection profile. This package was built from a user-supplied document; its authenticity, current validity, and status as the latest version have not been independently verified. Assessments reference this supplied baseline.
 
-فایل ورودی QuestAfta.V1.9.docx یک فرم پرشده بود. معرفی محصول، پاسخ‌ها، توضیحات اجرایی و علامت‌های انتخاب به بسته منتقل نشده‌اند. متن سلول‌های الزام، دستور انتخاب و گزینه‌های عمومی حفظ شده است. فایل Word اصلی همراه بسته توزیع نمی‌شود. اثر انگشت SHA-256 در catalog.json امکان تطبیق با فایل اولیه را می‌دهد. برای انتشار عمومی دربارهٔ حق بازنشر متن منبع فرضی نساز.
+The input, `QuestAfta.V1.9.docx`, was a populated form. The product introduction, answers, implementation explanations, and selection marks were excluded. Requirement cells, selection instructions, and general options were preserved. The original Word document is not distributed. Its SHA-256 fingerprint in `catalog.json` can be used to identify the input file. Do not assume permission to redistribute the source text publicly.
 
-## استخراج و شناسه‌ها
+## Extraction and identifiers
 
-۷۹ الزام اصلی در ۱۵ رده و ۳۰۷ ردیف توضیح/گزینه ثبت شده‌اند. شناسهٔ AFTA-2-1-01 یعنی بخش ۲-۱، الزام ۱. پسوند .s01 ردیف تفصیلی همان الزام است، نه شمارهٔ رسمی جدید. `source.table_index` و `row_index` شماره‌های صفرمبنا در جدول‌های مستقیم سند Word هستند؛ این‌ها شمارهٔ صفحه نیستند. نگاشت ثابت است و در نسخه‌های بعد بدون ثبت مهاجرت نباید تغییر کند. هویت الزام همراه نسخهٔ منبع تفسیر می‌شود.
+The catalog contains 79 main requirements across 15 categories and 307 detail/option rows. `AFTA-2-1-01` means section 2-1, requirement 1. The `.s01` suffix identifies a detail row within that requirement; it is not a new official requirement number. `source.table_index` and `row_index` are zero-based indices into the Word document's tables, not page numbers. Keep these mappings stable; changes in later versions require an explicit migration. Interpret each ID together with the source version.
 
-ساختار هر ردیف به صورت متن الزام یا دستور انتخاب، متن گزینه و سپس ستون‌های انتخاب/پاسخ بود. فقط دو بخش اولِ محتوای عمومی استخراج شده‌اند؛ انتخاب‌ها و ستون توضیح محصول کنار گذاشته شده‌اند. عبارت «سایر موارد» جای خالی تصمیم پروژه است و دلیلی برای افزودن پاسخ محصول قبلی نیست.
+Rows contained a requirement or selection instruction, option text, and selection/answer columns. Only general requirement/instruction and option content was extracted; status marks and product-answer columns were excluded. The Persian option «سایر موارد» means “other” and leaves space for a project-specific decision. It is not a reason to reuse a previous product's answer.
 
-## ابهام‌هایی که باید حفظ و بررسی شوند
+Documentation and explanatory labels are in English. Source requirements, selection instructions, and option text remain in Persian without translation or silent correction. `catalog.json` remains the packaged source transcription. The optional Python helper currently generates Persian report text.
 
-این موارد از مقایسهٔ متن‌های خود سند شناسایی شده‌اند؛ اصلاح رسمی یا تفسیر قطعی محسوب نمی‌شوند:
+## Ambiguities to preserve and review
 
-- **AFTA-3-2-01:** متن TLS Client پذیرش TLS 1.2 و رد سایر نسخه‌ها را می‌گوید، ولی گزینه‌ها شامل مجموعه‌رمزهای منتسب به RFC 8446 هم هستند. متن را بی‌صدا به پشتیبانی/رد TLS 1.3 تبدیل نکن. تصمیم مستند مسئول امنیت/ارزیاب لازم است.
-- **AFTA-3-5-01:** نام Code Signing در یکی از زیرموارد با شناسه و OID درج‌شده در همان ردیف نیاز به تطبیق دارد؛ ارجاع OCSP نیز به صورت «RFC 696» آمده است. متن خام حفظ شده؛ برای پیاده‌سازی، مرجع اصلی استاندارد و نظر مسئول بررسی شود.
-- **AFTA-2-9-01 و 3-4:** انتخاب TLS طبق ارجاع صریح، بخش‌های ۳-۲ تا ۳-۴ را لازم می‌کند. بخش ۳-۴ شامل احراز هویت دوطرفه است؛ فقط به دلیل نبود پیاده‌سازی mTLS آن را نامرتبط اعلام نکن. برای HTTPS ارجاع صریح به ۳-۱ و ۳-۳ است؛ نیاز به ۳-۴ را بدون بررسی بیشتر تعمیم نده.
-- **AFTA-2-2 و 3-6:** وجود یک الگوریتم در گزینه‌های نسخهٔ ارسالی، توصیهٔ جاری برای فعال‌سازی آن نیست. گزینهٔ امن سازگار با الزامات انتخاب شود؛ برای انتخاب الگوریتم یا تغییر تنظیمات رمزنگاری، منابع اصلی جاری بررسی شوند. یافتهٔ انطباق با نسخهٔ ۱٫۹ را از پیشنهاد امنیتی جدید جدا نگه دار.
-- **AFTA-2-5-06:** عبارت «هر حساب تنها یک نقش» صریح است. وجود چند نقش در پروژه را خودکار معادل این شرط فرض نکن؛ اختلاف مدل نقش را ثبت کن.
-- **AFTA-3-6-09:** متن توصیف احراز هویت سرور و پایگاه کلید میزبان باید با نقش واقعی کلاینت/سرور در پروژه تطبیق داده شود؛ عبارت منبع را بی‌صدا اصلاح نکن.
+These issues were identified by comparing statements within the supplied document. They are not official corrections or definitive interpretations:
 
-تفسیر تأییدشدهٔ شرکت را در یک فایل جدا با شناسهٔ بند، متن تصمیم، مرجع/تأییدکننده، تاریخ و دامنهٔ پروژه‌ها نگه دار. آن را با متن اصلی ادغام نکن. تعارض حل‌نشده مانع وضعیت `satisfied` برای الزام مربوط است.
+- **AFTA-3-2-01:** The TLS client text calls for TLS 1.2 and rejection of other versions, but the options include cipher suites attributed to RFC 8446. Do not silently convert this to a TLS 1.3 acceptance or rejection rule. Obtain a documented security owner/assessor decision.
+- **AFTA-3-5-01:** The Code Signing name in one detail needs reconciliation with the identifier and OID in the same row. The OCSP reference is written as “RFC 696.” Preserve the raw text and consult the primary standard and responsible reviewer before implementation.
+- **AFTA-2-9-01 and section 3-4:** The explicit TLS selection references sections 3-2 through 3-4. Section 3-4 includes mutual authentication; do not mark it inapplicable solely because mTLS is not implemented. HTTPS explicitly references 3-1 and 3-3; do not automatically extend the 3-4 requirement to HTTPS without further review.
+- **Sections 2-2 and 3-6:** An algorithm appearing among the supplied options is not a current recommendation to enable it. Choose a secure option compatible with the requirements, and check current primary sources before choosing algorithms or changing cryptographic settings. Separate v1.9 conformance findings from additional security recommendations.
+- **AFTA-2-5-06:** The source explicitly states one role per account. Do not automatically treat multiple project roles as equivalent; record any role-model mismatch.
+- **AFTA-3-6-09:** Reconcile the description of server authentication and the host-key database with the project's actual client/server roles. Do not silently rewrite the source.
+
+Keep approved company interpretations in a separate record containing the requirement ID, decision, reference/approver, date, and project scope. Do not merge them into source text. Unresolved contradictions prevent a `satisfied` status for the affected requirement.

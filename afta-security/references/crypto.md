@@ -1,12 +1,12 @@
-# 2-2 رده رمزنگاری
+# 2-2 Cryptography
 
-متن استخراج‌شده از نسخهٔ ۱٫۹ ارسالی؛ گزینه‌ها بدون انتخاب و بدون پاسخ‌های محصول قبلی هستند. متن منبع الزام است؛ روش بررسی در workflow.md پیشنهاد اجرایی این بسته است.
+Original Persian text extracted from the supplied v1.9 document. Options are unselected and previous product answers are excluded. Source text defines the requirement; assessment guidance in workflow.md is supplied by this package.
 
 ## AFTA-2-2-01
 
 محصول باید قابلیت رمزنگاری یا واحد رمزنگاری داشته باشد، بنابراین باید رمزگذاری و رمزگشایی را بر اساس الگوریتم AES (تعریف‌شده ISO 18033-3) با توجه به موارد زیر انجام دهد.
 
-نشانی منبع: جدول 3، ردیف 1 (شماره‌گذاری از صفر در XML سند).
+Source: table 3, row 1 (zero-based indices in the Word document XML).
 
 ### AFTA-2-2-01.s01
 
@@ -26,7 +26,7 @@
 
 محصول باید بر اساس الگوریتم رمزنگاری و طول کلیدی که انتخاب می‌نماید، توانایی تولید داده درهم‌سازی شده (Hash) را داشته باشد؛ بنابراین باید برای تولید درهم‌سازی از موارد زیر بر اساس ISO/IEC 10118-3:2004 استفاده نماید.
 
-نشانی منبع: جدول 3، ردیف 5 (شماره‌گذاری از صفر در XML سند).
+Source: table 3, row 5 (zero-based indices in the Word document XML).
 
 ### AFTA-2-2-02.s01
 
@@ -50,9 +50,9 @@
 
 در صورتی که تولید کلید رمزنگاری در محصول وجود دارد، نیاز است که تخریب کلید رمزنگاری نیز بر اساس موارد زیر صورت پذیرد. (اختیاری)
 
-نشانی منبع: جدول 3، ردیف 10 (شماره‌گذاری از صفر در XML سند).
+Source: table 3, row 10 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از key_generation؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of key_generation. Unknown conditions do not establish non-applicability.
 
 ### AFTA-2-2-03.s01
 
@@ -76,9 +76,9 @@
 
 در صورتی که امضای دیجیتال در محصول پشتیبانی می‌شود، نیاز است که سرویس‌های امضای رمزنگاری (تولید و تأیید) بر اساس الگوریتم‌های رمزنگاری زیر انجام گیرد. (اختیاری)
 
-نشانی منبع: جدول 3، ردیف 15 (شماره‌گذاری از صفر در XML سند).
+Source: table 3, row 15 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از digital_signatures؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of digital_signatures. Unknown conditions do not establish non-applicability.
 
 ### AFTA-2-2-04.s01
 

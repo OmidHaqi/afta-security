@@ -1,23 +1,23 @@
-# گزارش بررسی الزامات امنیتی افتا
+# AFTA Security Requirements Assessment
 
-- نسخهٔ پایه: سند ارسالی ۱٫۹ / بسته 1.1.0
-- پروژه، نسخه یا commit، محیط، تاریخ بررسی:
-- دامنهٔ بررسی و اجزای خارج از دامنه:
-- معماری، مسیرهای ارتباطی و مسئول زیرساخت:
-- انتخاب‌های پروژه، شرط‌ها و شواهد تعیین کاربرد:
+- Baseline: supplied checklist v1.9 / package v1.1.0
+- Project, revision or commit, environment, assessment date:
+- Assessment scope and excluded components:
+- Architecture, communication paths, and infrastructure owner:
+- Project selections, applicability conditions, and supporting evidence:
 
-## پوشش
+## Coverage
 
-تعداد بندهای بررسی‌شده از کل دامنه و تعداد هر وضعیت را مشخص کن. در بررسی کامل، همهٔ ۷۹ شناسه باید ثبت شوند. گزارش ارزیابی مهندسی است و تأییدیهٔ رسمی یا تضمین امنیت نیست.
+State the number of requirements assessed within the scope and the count for each status. A full assessment must include all 79 main IDs. This is an engineering assessment, not formal certification or a guarantee of security.
 
-| شناسه | وضعیت | شاهد و نتیجهٔ بررسی | گزینه‌ها و پوشش زیرموارد | شکاف یا ابهام | اقدام بعدی |
+| ID | Status | Evidence and verification result | Selections and detail coverage | Gap or ambiguity | Next action |
 |---|---|---|---|---|---|
 
-## اقدامات اولویت‌دار
+## Prioritized actions
 
-| اولویت | شناسهٔ الزام | اقدام | معیار پذیرش و روش آزمون | مسئول | موعد |
+| Priority | Requirement ID | Action | Acceptance criteria and verification method | Owner | Due date |
 |---|---|---|---|---|---|
 
-## بررسی‌های باقی‌مانده
+## Outstanding reviews
 
-موارد نیازمند آزمون محیط، اطلاعات زیرساخت، بررسی انسانی و تفسیر متن منبع را همراه دلیل مشخص کن. پیشنهادهای امنیتی فراتر از نسخهٔ پایه را جداگانه و با مرجع بنویس.
+Identify items requiring runtime tests, infrastructure information, human review, or source interpretation, with a reason for each. Document security recommendations beyond the baseline separately and provide references.

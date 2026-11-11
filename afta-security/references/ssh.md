@@ -1,22 +1,22 @@
-# 3-6 پروتکل SSH
+# 3-6 SSH
 
-متن استخراج‌شده از نسخهٔ ۱٫۹ ارسالی؛ گزینه‌ها بدون انتخاب و بدون پاسخ‌های محصول قبلی هستند. متن منبع الزام است؛ روش بررسی در workflow.md پیشنهاد اجرایی این بسته است.
+Original Persian text extracted from the supplied v1.9 document. Options are unselected and previous product answers are excluded. Source text defines the requirement; assessment guidance in workflow.md is supplied by this package.
 
 ## AFTA-3-6-01
 
 محصول باید پروتکل SSH را مطابق با RFCهای 4251، 4252، 4253، 4254، 5656 و 6668 پیاده‌سازی نماید.
 
-نشانی منبع: جدول 16، ردیف 1 (شماره‌گذاری از صفر در XML سند).
+Source: table 16, row 1 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از ssh؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of ssh. Unknown conditions do not establish non-applicability.
 
 ## AFTA-3-6-02
 
 محصول باید در پیاده‌سازی پروتکل SSH مطابق RFC 4252، از روش‌های احراز هویت زیر پشتیبانی نماید.
 
-نشانی منبع: جدول 16، ردیف 2 (شماره‌گذاری از صفر در XML سند).
+Source: table 16, row 2 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از ssh؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of ssh. Unknown conditions do not establish non-applicability.
 
 ### AFTA-3-6-02.s01
 
@@ -30,17 +30,17 @@
 
 محصول باید در پیاده‌سازی پروتکل SSH مطابق RFC 4253، بسته‌های بزرگتر از مقدار مشخصی (در بخش «توضیحات» ذکر شود) را کنار بگذارد.
 
-نشانی منبع: جدول 16، ردیف 5 (شماره‌گذاری از صفر در XML سند).
+Source: table 16, row 5 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از ssh؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of ssh. Unknown conditions do not establish non-applicability.
 
 ## AFTA-3-6-04
 
 محصول باید در پیاده‌سازی پروتکل SSH تنها از الگوریتم‌های رمزنگاری زیر استفاده نماید.
 
-نشانی منبع: جدول 16، ردیف 6 (شماره‌گذاری از صفر در XML سند).
+Source: table 16, row 6 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از ssh؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of ssh. Unknown conditions do not establish non-applicability.
 
 ### AFTA-3-6-04.s01
 
@@ -78,9 +78,9 @@ AEAD_AES_256_GCM
 
 محصول باید در پیاده‌سازی پروتکل انتقال SSH تنها از الگوریتم‌های کلید عمومی زیر استفاده نماید.
 
-نشانی منبع: جدول 16، ردیف 15 (شماره‌گذاری از صفر در XML سند).
+Source: table 16, row 15 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از ssh؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of ssh. Unknown conditions do not establish non-applicability.
 
 ### AFTA-3-6-05.s01
 
@@ -138,9 +138,9 @@ x509v3-ssh-rsa
 
 محصول باید در پیاده‌سازی پروتکل انتقال SSH تنها از الگوریتم‌های MAC صحت داده‌های زیر استفاده نماید.
 
-نشانی منبع: جدول 16، ردیف 29 (شماره‌گذاری از صفر در XML سند).
+Source: table 16, row 29 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از ssh؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of ssh. Unknown conditions do not establish non-applicability.
 
 ### AFTA-3-6-06.s01
 
@@ -170,9 +170,9 @@ hmac-sha1
 
 محصول باید در پیاده‌سازی پروتکل SSH تنها از الگوریتم‌های تبادل کلید زیر استفاده نماید.
 
-نشانی منبع: جدول 16، ردیف 36 (شماره‌گذاری از صفر در XML سند).
+Source: table 16, row 36 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از ssh؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of ssh. Unknown conditions do not establish non-applicability.
 
 ### AFTA-3-6-07.s01
 
@@ -230,14 +230,14 @@ diffie-hellman-group14-sha256
 
 محصول باید اطمینان پیدا کند که در یک ارتباط SSH، کلیدهای نشست یکسانی برای حد آستانه (طول نشست بیشتر از یک ساعت و حجم داده مبادله شده بیشتر از 1 گیگابایت نباشد) استفاده گردد. در صورت پر شدن حد آستانه برای هر کدام از موارد ذکر شده، باید تجدید کلید صورت بگیرد.
 
-نشانی منبع: جدول 16، ردیف 50 (شماره‌گذاری از صفر در XML سند).
+Source: table 16, row 50 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از ssh؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of ssh. Unknown conditions do not establish non-applicability.
 
 ## AFTA-3-6-09
 
 محصول باید اطمینان حاصل نماید که کلاینت SSH، سرور SSH را احراز هویت می‌کند. سرور SSH از یک پایگاه داده محلی که نام هر میزبان را با کلید عمومی متناظر آن (تشریح‌شده در RFC 4251 بخش ۷.1) همراه می‌کند، استفاده می‌نماید.
 
-نشانی منبع: جدول 16، ردیف 51 (شماره‌گذاری از صفر در XML سند).
+Source: table 16, row 51 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از ssh؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of ssh. Unknown conditions do not establish non-applicability.

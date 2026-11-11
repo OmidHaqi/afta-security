@@ -1,14 +1,14 @@
-# 3-2 پروتکل TLS Client
+# 3-2 TLS client
 
-متن استخراج‌شده از نسخهٔ ۱٫۹ ارسالی؛ گزینه‌ها بدون انتخاب و بدون پاسخ‌های محصول قبلی هستند. متن منبع الزام است؛ روش بررسی در workflow.md پیشنهاد اجرایی این بسته است.
+Original Persian text extracted from the supplied v1.9 document. Options are unselected and previous product answers are excluded. Source text defines the requirement; assessment guidance in workflow.md is supplied by this package.
 
 ## AFTA-3-2-01
 
 محصول باید TLS 1.2 (RFC 5246) را پیاده‌سازی و دیگر نسخه‌های TLS و SSL را رد کند. همچنین محصول باید TLS را با پشتیبانی از مجموعه‌های رمز زیر پیاده‌سازی نماید.
 
-نشانی منبع: جدول 12، ردیف 1 (شماره‌گذاری از صفر در XML سند).
+Source: table 12, row 1 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از tls, tls_client؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of tls, tls_client. Unknown conditions do not establish non-applicability.
 
 ### AFTA-3-2-01.s01
 
@@ -112,17 +112,17 @@ TLS_DH_RSA_WITH_AES_128_GCM_SHA256
 
 محصول باید مطابقت شناسه ارائه‌شده با شناسه مرجع را با توجه به بخش 6 از RFC 6125، تأیید نماید.
 
-نشانی منبع: جدول 12، ردیف 18 (شماره‌گذاری از صفر در XML سند).
+Source: table 12, row 18 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از tls, tls_client؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of tls, tls_client. Unknown conditions do not establish non-applicability.
 
 ## AFTA-3-2-03
 
 محصول باید کانال امن را فقط در صورت معتبر بودن گواهی‌نامه سرور برقرار سازد؛ بنابراین اگر گواهی‌نامه سرور غیرمعتبر به نظر رسید، محصول باید بر اساس موارد زیر رفتار نماید.
 
-نشانی منبع: جدول 12، ردیف 19 (شماره‌گذاری از صفر در XML سند).
+Source: table 12, row 19 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از tls, tls_client؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of tls, tls_client. Unknown conditions do not establish non-applicability.
 
 ### AFTA-3-2-03.s01
 
@@ -142,9 +142,9 @@ TLS_DH_RSA_WITH_AES_128_GCM_SHA256
 
 محصول باید در پیام ClientHello برای استفاده از خم‌های بیضوی، بر اساس موارد زیر عمل نماید.
 
-نشانی منبع: جدول 12، ردیف 23 (شماره‌گذاری از صفر در XML سند).
+Source: table 12, row 23 (zero-based indices in the Word document XML).
 
-شرط اولیهٔ کاربرد: دست‌کم یکی از tls, tls_client؛ نامشخص بودن شرط به معنی نامرتبط بودن نیست.
+Initial applicability: at least one of tls, tls_client. Unknown conditions do not establish non-applicability.
 
 ### AFTA-3-2-04.s01
 

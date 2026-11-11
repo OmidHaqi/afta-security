@@ -1,12 +1,12 @@
-# 2-3 رده شناسایی و احراز هویت
+# 2-3 Identification and authentication
 
-متن استخراج‌شده از نسخهٔ ۱٫۹ ارسالی؛ گزینه‌ها بدون انتخاب و بدون پاسخ‌های محصول قبلی هستند. متن منبع الزام است؛ روش بررسی در workflow.md پیشنهاد اجرایی این بسته است.
+Original Persian text extracted from the supplied v1.9 document. Options are unselected and previous product answers are excluded. Source text defines the requirement; assessment guidance in workflow.md is supplied by this package.
 
 ## AFTA-2-3-01
 
 محصول باید بتواند تعداد تلاش‌های ناموفقی را که برای احراز هویت صورت گرفته است (در هر بخش یا قسمتی که نیاز به احراز هویت وجود دارد)، بر اساس موارد زیر مشخص نماید.
 
-نشانی منبع: جدول 4، ردیف 1 (شماره‌گذاری از صفر در XML سند).
+Source: table 4, row 1 (zero-based indices in the Word document XML).
 
 ### AFTA-2-3-01.s01
 
@@ -22,7 +22,7 @@
 
 محصول باید هنگامی که تعداد تلاش‌های ناموفق صورت گرفته برای احراز هویت به حد تعیین‌شده رسید، برای پیچیده‌تر کردن احراز هویت از موارد زیر استفاده نماید.
 
-نشانی منبع: جدول 4، ردیف 4 (شماره‌گذاری از صفر در XML سند).
+Source: table 4, row 4 (zero-based indices in the Word document XML).
 
 ### AFTA-2-3-02.s01
 
@@ -47,7 +47,7 @@
 
 محصول باید برای هر کاربر، ویژگی‌های امنیتی را که شامل حداقل اطلاعات کاربری لازم برای شناسایی و احراز هویت می‌باشند، نگهداری نماید.
 
-نشانی منبع: جدول 4، ردیف 9 (شماره‌گذاری از صفر در XML سند).
+Source: table 4, row 9 (zero-based indices in the Word document XML).
 
 ### AFTA-2-3-03.s01
 
@@ -79,7 +79,7 @@
 
 محصول باید قابلیت مدیریت گذرواژه را فراهم آورد.
 
-نشانی منبع: جدول 4، ردیف 16 (شماره‌گذاری از صفر در XML سند).
+Source: table 4, row 16 (zero-based indices in the Word document XML).
 
 ### AFTA-2-3-04.s01
 
@@ -111,7 +111,7 @@
 
 محصول باید پیش از احراز هویت موفق یک کاربر، تنها اجازه انجام اقدامات محدودی را فراهم نماید.
 
-نشانی منبع: جدول 4، ردیف 23 (شماره‌گذاری از صفر در XML سند).
+Source: table 4, row 23 (zero-based indices in the Word document XML).
 
 ### AFTA-2-3-05.s01
 
@@ -135,7 +135,7 @@
 
 محصول باید از سازوکار احراز هویت پشتیبانی نماید (برای احراز هویت کاربران راه‌دور، باید بیش از یک سازوکار احراز هویت در محصول به کار رفته باشد).
 
-نشانی منبع: جدول 4، ردیف 28 (شماره‌گذاری از صفر در XML سند).
+Source: table 4, row 28 (zero-based indices in the Word document XML).
 
 ### AFTA-2-3-06.s01
 
@@ -167,7 +167,7 @@ OTP یا توکن
 
 محصول باید برای هر کاربر فعال، ویژگی‌های امنیتی را نگهداری نماید.
 
-نشانی منبع: جدول 4، ردیف 35 (شماره‌گذاری از صفر در XML سند).
+Source: table 4, row 35 (zero-based indices in the Word document XML).
 
 ### AFTA-2-3-07.s01
 
@@ -195,7 +195,7 @@ OTP یا توکن
 
 محصول باید در زمان اتصال اولیه کاربر یا همان زمان برقراری نشست توسط کاربر، موارد زیر را اجرا نماید.
 
-نشانی منبع: جدول 4، ردیف 41 (شماره‌گذاری از صفر در XML سند).
+Source: table 4, row 41 (zero-based indices in the Word document XML).
 
 ### AFTA-2-3-08.s01
 
@@ -215,7 +215,7 @@ OTP یا توکن
 
 محصول باید بر روی تغییرات ویژگی‌های امنیتی کاربر فعال قوانینی را اعمال نماید.
 
-نشانی منبع: جدول 4، ردیف 45 (شماره‌گذاری از صفر در XML سند).
+Source: table 4, row 45 (zero-based indices in the Word document XML).
 
 ### AFTA-2-3-09.s01
 

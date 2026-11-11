@@ -1,12 +1,12 @@
-# 2-1 رده ممیزی امنیت (Log)
+# 2-1 Security audit (logging)
 
-متن استخراج‌شده از نسخهٔ ۱٫۹ ارسالی؛ گزینه‌ها بدون انتخاب و بدون پاسخ‌های محصول قبلی هستند. متن منبع الزام است؛ روش بررسی در workflow.md پیشنهاد اجرایی این بسته است.
+Original Persian text extracted from the supplied v1.9 document. Options are unselected and previous product answers are excluded. Source text defines the requirement; assessment guidance in workflow.md is supplied by this package.
 
 ## AFTA-2-1-01
 
 محصول باید برای موارد مشخص‌شده که در زیر آمده است، ثبت‌نشان تولید کند (Log ثبت نماید).
 
-نشانی منبع: جدول 2، ردیف 1 (شماره‌گذاری از صفر در XML سند).
+Source: table 2, row 1 (zero-based indices in the Word document XML).
 
 ### AFTA-2-1-01.s01
 
@@ -114,7 +114,7 @@
 
 محصول باید برای هر ثبت‌نشان تولیدشده، ویژگی‌هایی که در زیر آمده است را ثبت نماید.
 
-نشانی منبع: جدول 2، ردیف 27 (شماره‌گذاری از صفر در XML سند).
+Source: table 2, row 27 (zero-based indices in the Word document XML).
 
 ### AFTA-2-1-02.s01
 
@@ -146,13 +146,13 @@
 
 محصول باید ثبت‌نشان‌ها را در برابر دسترسی غیرمجاز محافظت نماید.
 
-نشانی منبع: جدول 2، ردیف 34 (شماره‌گذاری از صفر در XML سند).
+Source: table 2, row 34 (zero-based indices in the Word document XML).
 
 ## AFTA-2-1-04
 
 ثبت‌نشان‌هایی که محصول تولید می‌نماید باید برای کاربر ساده و قابل فهم باشند.
 
-نشانی منبع: جدول 2، ردیف 35 (شماره‌گذاری از صفر در XML سند).
+Source: table 2, row 35 (zero-based indices in the Word document XML).
 
 ### AFTA-2-1-04.s01
 
@@ -172,7 +172,7 @@
 
 محصول باید امکان انتخاب و مرتب‌سازی برای ثبت‌نشان‌های تولیدشده را بر اساس بخش‌ها و پارامترهای مختلف، برای کاربر مجاز فراهم نماید.
 
-نشانی منبع: جدول 2، ردیف 39 (شماره‌گذاری از صفر در XML سند).
+Source: table 2, row 39 (zero-based indices in the Word document XML).
 
 ### AFTA-2-1-05.s01
 
@@ -208,7 +208,7 @@
 
 محصول باید هرگونه حذف و تغییر غیرمجاز در ثبت‌نشان‌ها را تشخیص دهد و در صورت امکان جلوگیری نماید.
 
-نشانی منبع: جدول 2، ردیف 47 (شماره‌گذاری از صفر در XML سند).
+Source: table 2, row 47 (zero-based indices in the Word document XML).
 
 ### AFTA-2-1-06.s01
 
@@ -232,7 +232,7 @@
 
 محصول باید وقتی که حجم ثبت‌نشان‌ها، به حد آستانه تعریف شده برای ذخیره‌سازی می‌رسد، کاربر مجاز را مطلع نماید.
 
-نشانی منبع: جدول 2، ردیف 52 (شماره‌گذاری از صفر در XML سند).
+Source: table 2, row 52 (zero-based indices in the Word document XML).
 
 ### AFTA-2-1-07.s01
 
@@ -256,7 +256,7 @@
 
 محصول باید توانایی تولید ثبت‌نشان (ثبت Log) هنگام از کار افتادن محصول و/یا پر شدن حافظه ثبت‌نشان‌ها را داشته باشد و برای این کار از رویکردهای بیان‌شده استفاده نماید.
 
-نشانی منبع: جدول 2، ردیف 57 (شماره‌گذاری از صفر در XML سند).
+Source: table 2, row 57 (zero-based indices in the Word document XML).
 
 ### AFTA-2-1-08.s01
 
